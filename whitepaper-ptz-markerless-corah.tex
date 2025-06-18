@@ -48,6 +48,7 @@ publish results in premier robotics conferences.
 \section{Research Abstract and Goals}
 
 \paragraph{Problem \& Objective}
+
 Existing markerless motion capture systems rely on collections of static cameras
 to reconstruct human motion in a capture volume.
 As a result, capturing motion of groups of people moving over large spaces and
@@ -60,30 +61,34 @@ systems consisting of multiple pan-tilt-zoom cameras.
 
 % Background (state of art), significance, gap, impact
 \paragraph{Background \& Significance}
+
 Over the past five years, markerless motion capture has transitioned from
 research topic to product, and software and hardware offerings have emerged,
-often from leading companies in the marker-based space e.g., Vicon,
-Optitrack, or Qualisys.
+often from leading companies in the marker-based space e.g., Vicon, Optitrack,
+or Qualisys.
 One of the goals of this project will be to spur development of low-cost motion
 capture systems that can be readily installed at and serve sports facilities and
 arenas.
 % Could add more detail here on biomechanics data collection
 These systems promise applications varying from walk-in virtual reality
-worlds to the ability to collect biomechanics data for medical evaluations with
-minimal time and preparation.
+worlds\footnote{%
+  Vicon footnote missing?
+}
+to the ability to collect biomechanics data for medical evaluations with minimal
+time and preparation~\citep{Wade 2022}.
 Yet, like their marker-based cousins, these systems consist of large numbers of
 cameras (e.g. eight+) that must be carefully placed and mounted to tripods or a
 truss system and rigorously calibrated.
 
 The research community meanwhile has sought to cast away the anchor of
 fixed infrastructure by developing markerless motion capture capabilities around
-formations of UAVs~\citep{}.
+formations of UAVs~\citep{2,3,4,5}.
 While these aerial systems would not promise accuracy comparable to systems
 built around fixed cameras with calibrated extrinsics, they instead promise the
 ability to reconstruct human motion outdoors and largely without bounds.
 These systems have another, less obvious, limitation: research on aerial
-markerless motion capture has largely focused on reconstruction of individual
-people.
+markerless motion capture has largely focused on reconstructing motion of
+individual people.
 Further, because these approaches generally rely on robots that fly in a
 circular formation around one subject, capturing multiple subjects, especially
 if those subjects may sometimes move apart, poses a significant challenge
@@ -91,16 +96,17 @@ regarding view planning and coordination.
 
 Rather than controlling the locations of the cameras to follow the subject or
 subjects, we may consider directing the fields-of-view of a small number of
-fixed cameras to similarly reconstruct motions the subjects as they move about a
-large capture volume.
+fixed cameras to similarly observe and reconstruct motions of the subjects as
+they move about a large capture volume.
 In fact, markerless motion capture with pan-tilt-zoom (PTZ) cameras at fixed
 locations but with uncertain orientations has been studied along with
-application to downhill skiing~\citep{}.
-Yet, there has been less interest in developing markerless motion capture
-systems based on PTZ cameras.
-Moreover, neither body of work addresses the problem of controlling viewpoints
-of multiple cameras, especially as subjects may move apart and come back
-together again.
+application to downhill skiing~\citep{6}.
+Yet, there has been little interest overall in developing markerless motion
+capture systems based on PTZ cameras and that is despite use of gimbal cameras
+with aerial systems.
+Moreover, neither body of work addresses the general problem of controlling
+viewpoints and zoom for multiple cameras, especially as subjects may move apart
+and come back together again.
 
 \paragraph{Method \& approach}
 
