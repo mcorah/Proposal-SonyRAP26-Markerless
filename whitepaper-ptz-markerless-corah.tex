@@ -1,9 +1,20 @@
 \documentclass[12pt]{article}
 
+\usepackage{micahcorah}
+
 \usepackage{amsmath}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools,bbm}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{backgrounds}
+
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
 
 \usepackage[
 hidelinks,
@@ -189,6 +200,21 @@ from multiple perspectives, we plan to adopt similar methods for skeletal
 reconstruction and markerless motion capture as have been demonstrated
 previously for systems consisting of multiple PTZ cameras~\citep{6} or
 UAVs~\citep{2,3,4,5}.
+
+\begin{figure*}
+\centering
+\setlength{\tabcolsep}{1pt}
+\setlength{\figureheight}{1.2in}
+      \resizebox{\linewidth}{!}{
+      \input{figures/qualtiative}
+      }
+      \caption{%
+        Illustration of a view planning scenario taken from~\citep{8}.
+        Robots successfully track subjects despite pairs switching partners as
+        they cross.
+      }%
+      \label{fig:qualitative}
+\end{figure*}
 
 \textbf{Validation}
 \begin{itemize}
