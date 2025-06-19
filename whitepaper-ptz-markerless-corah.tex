@@ -145,6 +145,94 @@ Moreover, in combination with Gaussian splatting or neural fields methods, the
 work we propose could enable development of VR applications for professional
 sports media.
 
+\section{Description of Project}
+
+% Timeline with milestones and deliverables
+\begin{itemize}
+  \item (Aug--Oct '25) Prototype multi-camera view planning in indoor
+    laboratory environment
+  \item (Nov '25--Jan '26) Prototype 3D skeletal reconstruction based on
+    pan-tilt-zoom camera streams;
+  \item (Feb '26) Perform comparative experiments for skeletal reconstruction in
+    laboratory environment
+  \item (Feb '26) Milestone: submit paper based on initial system and
+    experiments to IROS'26
+  \item (March--April '26) Develop and evaluate person-tracking system for large
+    environment based on flat ground assumption
+  \item (May '26) Integrate updated tracking system; develop systems and
+    procedures for large scale outdoor experiments
+  \item (June '26) Perform experiments on outdoor fields
+  \item (July--Aug '26)
+    Write paper based on field experiments for submission to ICRA'26
+\end{itemize}
+
+% Research plan and technical approach (methodology, analysis techniques,
+% validation)
+
+Autonomous camera view planning is a key element of our approach.
+Our prior works on this present methods to optimize and maximize pixel densities
+over subjects surfaces for multiple cameras jointly.
+This approach applies submodular optimization methods to maximize view quality
+directly without relying on fixed assignments and guaranteeing constant-factor
+suboptimality for approximate solutions to the joint optimization problem.
+Simulation results involving a team of UAVs filming multiple moving subjects
+demonstrated emergent assignment and formation behaviors and superior
+performance compared to formation methods when subjects split and rejoin
+(Fig.~\ref{}).
+We propose applying a similar approach to planning for pan-tilt-zoom
+cameras by reformulating the earlier planning problem according to the PTZ
+configuration space.
+
+Having developed a camera controller that autonomously obtains views of subjects
+from multiple perspectives, we plan to adopt similar methods for skeletal
+reconstruction and markerless motion capture as have been demonstrated
+previously for systems consisting of multiple PTZ cameras~\citep{} or
+UAVs~\citep{}.
+
+\textbf{Validation}
+\begin{itemize}
+  \item Laboratory experiments combining marker-based and markerless evaluation
+    with static calibrated cameras will serve to validate the approach in the
+    first phase
+  \item The second phase will consist of evaluation via field experiments at an
+    outdoor field on the university campus.
+    Metric accuracy will be validated by surveying keypoints in the capture
+    volume and collecting datasets consisting of motion through those keypoints.
+\end{itemize}
+
+% Expected outcomes and results (separate tangible and intangible outcomes)
+
+The specific outcomes of proposed work are as follows:
+\begin{itemize}
+  \item Publication of approach and experimental results in premier robotics
+    conferences (IROS and ICRA)
+  \item Demonstration of proof of concept pan-tilt-zoom markerless motion
+    capture system capable of autonomously tracking and reconstructing multiple
+    moving subjects
+  \item Laboratory and field evaluation of above system
+  \item Open source release of planner implementation and other software modules
+    where appropriate
+\end{itemize}
+We expect that our work will spur increased interest in development of similar
+low-cost, high-capture-volume motion capture methods.
+The development of this technology will in turn reduce barriers to motion
+capture data collection for sports, dance, and various performances.
+This in turn will enable collection of novel datasets in these domains and
+integration into practice, e.g. review of practice film.
+Follow-on work may include development of methods for behavior prediction to
+improve closed loop control performance or integration of methods for dense
+reconstruction such based on Gaussian splatting.
+
+
+% Describe team composition
+
+PI: Prof. Micah Corah will supervise the proposed work.
+RA: One graduate student (MS or PhD) will be supported and will lead
+implementation of the technical approach
+Undergrad RA(s): When appropriate, we will recruit and include undergraduate
+researchers, especially to support subsystem development and execution of
+laboratory and field experiments
+
 % Fakesection: Bibliography
 \bibliographystyle{plainnat}
 \bibliography{publisher_abbreviations,micah_corah_papers,bibliography}
