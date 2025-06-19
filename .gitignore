@@ -1,0 +1,42 @@
+*~
+fig/svgs/*
+
+# latex
+*.aux*
+*.brf
+*.swp
+*.log
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.pdfsync
+*.bak
+*.nav
+*.snm
+
+# vim
+*.sw*
+*.sv[h-z]
+
+# sage
+*.sage
+sage-plots*.tex
+*.sage.py
+*.sout
+*.pyc
+
+# latexmk
+*.swn
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.synctex.gz(busy)
+*eps-converted-to.pdf
+
+whitepaper-ptz-markerless-corah.pdf
