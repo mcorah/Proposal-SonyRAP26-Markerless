@@ -86,14 +86,14 @@ worlds\footnote{%
   Vicon footnote missing?
 }
 to the ability to collect biomechanics data for medical evaluations with minimal
-time and preparation~\citep{Wade 2022}.
+time and preparation~\citep{wade2022peerj}.
 Yet, like their marker-based cousins, these systems consist of large numbers of
 cameras (e.g. eight+) that must be carefully placed and mounted to tripods or a
 truss system and rigorously calibrated.
 
 The research community meanwhile has sought to cast away the anchor of
 fixed infrastructure by developing markerless motion capture capabilities around
-formations of UAVs~\citep{2,3,4,5}.
+formations of UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 While these aerial systems would not promise accuracy comparable to systems
 built around fixed cameras with calibrated extrinsics, they instead promise the
 ability to reconstruct human motion outdoors and largely without bounds.
@@ -111,7 +111,7 @@ fixed cameras to similarly observe and reconstruct motions of the subjects as
 they move about a large capture volume.
 In fact, markerless motion capture with pan-tilt-zoom (PTZ) cameras at fixed
 locations but with uncertain orientations has been studied along with
-application to downhill skiing~\citep{6}.
+application to downhill skiing~\citep{bachmann20193dv}.
 Yet, there has been little interest overall in developing markerless motion
 capture systems based on PTZ cameras and that is despite use of gimbal cameras
 with aerial systems.
@@ -127,7 +127,7 @@ subjects moving together and separately over a large space such as a football
 field or running track.
 A key part of this approach will involve integration of assignment-free view
 planning methods we have developed for this multi-camera, multi-subject setting
-based on submodular optimization methods~\citep{7,8}.
+based on submodular optimization methods~\citep{suresh2024iros,hughes2024cdc}.
 
 \paragraph{Benefit to SRA and Samsung:}
 
@@ -183,14 +183,15 @@ sports media.
 
 Autonomous camera view planning is a key element of our approach.
 Our prior works on this topic present methods to optimize and maximize pixel
-densities over subjects' surfaces for multiple cameras jointly~\citep{7,8}.
+densities over subjects' surfaces for multiple cameras
+jointly~\citep{suresh2024iros,hughes2024cdc}.
 This approach applies submodular optimization methods to maximize view quality
 directly without relying on fixed assignments and guaranteeing constant-factor
 suboptimality for approximate solutions to the joint optimization problem.
 Simulation results involving a team of UAVs filming multiple moving subjects
 demonstrated emergent assignment and formation behaviors and superior
 performance compared to formation methods when subjects split and rejoin
-(Fig.~\ref{}).
+(Fig.~\ref{fig:qualitative}).
 We propose applying a similar approach to planning for pan-tilt-zoom cameras by
 reformulating the earlier planning problem according to the PTZ configuration
 space.
@@ -198,8 +199,9 @@ space.
 Having developed a camera controller that autonomously obtains views of subjects
 from multiple perspectives, we plan to adopt similar methods for skeletal
 reconstruction and markerless motion capture as have been demonstrated
-previously for systems consisting of multiple PTZ cameras~\citep{6} or
-UAVs~\citep{2,3,4,5}.
+previously for systems consisting of multiple PTZ
+cameras~\citep{bachmann20193dv} or
+UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 
 \begin{figure*}
 \centering
@@ -209,7 +211,8 @@ UAVs~\citep{2,3,4,5}.
       \input{figures/qualtiative}
       }
       \caption{%
-        Illustration of a view planning scenario taken from~\citep{8}.
+        Illustration of a view planning scenario taken
+        from~\citep{hughes2024cdc}.
         Robots successfully track subjects despite pairs switching partners as
         they cross.
       }%
@@ -261,6 +264,6 @@ laboratory and field experiments
 
 % Fakesection: Bibliography
 \bibliographystyle{plainnat}
-\bibliography{publisher_abbreviations,micah_corah_papers,bibliography}
+\bibliography{publisher_abbreviations,micah_corah_papers,markerless_refs,bibliography}
 
 \end{document}
