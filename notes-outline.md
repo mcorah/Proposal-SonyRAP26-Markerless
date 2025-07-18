@@ -24,6 +24,11 @@ is probably the best fit, but I would need to address a few key issues first:
 * Contributions toward image and video processing
 * Application of ML
 
+## Other expectations
+
+Include description of how proposal is differentiated from the current
+state-of-the-art
+
 # Outline
 
 * Abstract (and theme)
@@ -31,7 +36,7 @@ is probably the best fit, but I would need to address a few key issues first:
     * Problem description
     * Challenges
     * Impact
-* Gap in SoA and contributions
+* Gap in state-of-art and contribution
     * Limited number of subjects
     * Lack of sensitivity analysis or metric validation
     * Contributions
