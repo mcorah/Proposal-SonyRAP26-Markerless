@@ -10,7 +10,7 @@
 * CV: Attach
 * SAT code: (get from Krista Morrow)
 
-# Keyword and award type
+## Keyword and award type
 
 I chose capture planning because the core contribution is under robotics and
 because entertainment technology is in line with my proposal (though not
@@ -26,10 +26,32 @@ is probably the best fit, but I would need to address a few key issues first:
 
 # Outline
 
+* Abstract (and theme)
+* Intro
+    * Problem description
+    * Challenges
+    * Impact
+* Gap in SoA and contributions
+    * Limited number of subjects
+    * Lack of sensitivity analysis or metric validation
+    * Contributions
+* Methods
+    * Multi-camera coordination
+    * Reconstruction (Pose reconstruction, Gaussian splatting)
+    * Experimental validation (laboratory experiments, field experiments) + facilities
+* Goals and milestones
+* Expected outcomes
+* Team and experience
 
 
 
-* Do not forget facilities!
+Where does Impact go? (biomechanics, media, etc)
+
+Where do challenges go?
+
+* Do not forget facilities! (validation)
+
+Preliminary results... intersperse?
 
 ## Impacts
 
@@ -60,3 +82,5 @@ What is current and future?
 Should I ask for markerless equipment? Use survey equipment for validation?
 
 Experiments via simulation? (should incorporate into Nvidia proposal)
+
+Design? How to select appropriate numbers and placements of cameras?
