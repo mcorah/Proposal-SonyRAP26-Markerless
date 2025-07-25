@@ -84,6 +84,9 @@ Can I fit in 4D splatting?
 A similar capture pipeline as Michael Black uses?
 What is current and future?
 
+High fidelity reconstruction will require high resolution data covering relevant
+parts of a scene
+
 Should I ask for markerless equipment? Use survey equipment for validation?
 
 Experiments via simulation? (should incorporate into Nvidia proposal)
