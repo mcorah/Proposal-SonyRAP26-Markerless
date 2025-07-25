@@ -58,6 +58,11 @@ Where do challenges go?
 
 Preliminary results... intersperse?
 
+## Milestones and deliverables
+
+* Multi-camera multi-subject filming system
+* Indoor and outdoor datasets
+
 ## Impacts
 
 * Injury tracking (see relevant paper)
