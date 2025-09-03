@@ -318,6 +318,38 @@ Follow-on work may include development of methods for behavior prediction to
 improve closed loop control performance or integration of methods for dense
 reconstruction such based on Gaussian splatting.
 
+\subsection{Future work and proposed extensions}
+
+\micah{Future work is a bit all over the place. Revise and clean up.}
+
+During the initial one-year timeline, our research efforts on markerless motion
+capture will be limited to reconstruction of human skeletal pose.
+If this project is extended for another year, we expect to focus on enabling
+dense motion capture and reconstruction.
+Methods for dense reconstruction of dynamic environments, e.g. methods for
+dynamic Gaussian splatting~\citep{zheng2025cvpr} are quickly making dense
+dynamic reconstruction more accessible.
+However, current methods are often limited to laboratory environments and
+additional instrumentation to compute accurate depth
+measurements~\citep{zheng2025cvpr}.
+
+We expect our activities would focus on developing sytems for dense
+reconstruction and addressing subsequent challenges for planning and autonomy.
+From a systems standpoint, achieving dense reconstruction with PTZ camera will
+likely involve
+extension of metric depth estimation models \citet{} suitable for cameras with
+variable intrinsics and integrating with state-of-art tools for Gaussian
+splatting~\citep{zheng2025cvpr}.
+Moreover, we expect dense, dynamic reconstruction to exacerbate challenges
+related to \emph{resolution} and \emph{coverage}.
+At the same time, a strength of our approach is that because we model and
+optimize pixel densities over the surface of the scene directly, our methods are
+therefore suitable to incorporating these twin challenges into our design and
+modeling.
+In this sense, coverage and resolution are requirements---we can adapt our
+planning approach accordingly and design camera systems (numbers, placements,
+and models of cameras) to meet these requirements.
+
 % Describe team composition
 \section{Team and experience}
 
