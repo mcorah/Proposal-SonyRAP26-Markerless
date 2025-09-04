@@ -1,14 +1,18 @@
 # Submission details
 
 * Proposal title: (copy details)
-* Keywords:
+* Keywords: Active Perception, Markerless Motion Capture, Human Pose Estimation
+  and Tracking
 * Award type: Faculty Innovation Award
 * Primary keyword:
     * Major category: Entertainment technology
     * Keyword category: Robotics
     * Keyword: Capture Planning for Large 3D Spaces
 * CV: Attach
-* SAT code: (get from Krista Morrow)
+* SAT code: 4073
+
+Alternate keyword/group areas to reference:
+* Infotech, CV (pose estimation and such)
 
 ## Keyword and award type
 
@@ -46,6 +50,7 @@ state-of-the-art
     * Experimental validation (laboratory experiments, field experiments) + facilities
 * Goals and milestones
 * Expected outcomes
+    * Extension
 * Team and experience
 
 
@@ -88,6 +93,8 @@ Preliminary results... intersperse?
 Can I fit in 4D splatting?
 A similar capture pipeline as Michael Black uses?
 What is current and future?
+_reference Black pipeline for shape representation and similar_
+_reference splatting when talking about future development_
 
 High fidelity reconstruction will require high resolution data covering relevant
 parts of a scene
@@ -97,3 +104,6 @@ Should I ask for markerless equipment? Use survey equipment for validation?
 Experiments via simulation? (should incorporate into Nvidia proposal)
 
 Design? How to select appropriate numbers and placements of cameras?
+
+Can do markerless evaluation with a system based on FreeMoCap and low-cost
+cameras (tripods, and such)
