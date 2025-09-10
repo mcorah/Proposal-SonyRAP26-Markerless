@@ -237,6 +237,45 @@ A key part of this approach will involve integration of assignment-free view
 planning methods we have developed for this multi-camera, multi-subject setting
 based on submodular optimization methods~\citep{suresh2024iros,hughes2024cdc}.
 
+\subsection{Multi-camera coordination}
+
+Autonomous camera view planning is a key element of our approach.
+Our prior works on this topic present methods to optimize and maximize pixel
+densities over subjects' surfaces for multiple cameras
+jointly~\citep{suresh2024iros,hughes2024cdc}.
+This approach applies submodular optimization methods to maximize view quality
+directly without relying on fixed assignments and guaranteeing constant-factor
+suboptimality for approximate solutions to the joint optimization problem.
+Simulation results involving a team of UAVs filming multiple moving subjects
+demonstrated emergent assignment and formation behaviors and superior
+performance compared to formation methods when subjects split and rejoin
+(Fig.~\ref{fig:qualitative}).
+We propose applying a similar approach to planning for pan-tilt-zoom cameras by
+reformulating the earlier planning problem according to the PTZ configuration
+space.
+
+\subsection{Reconstruction}
+
+Having developed a camera controller that autonomously obtains views of subjects
+from multiple perspectives, we plan to adopt similar methods for skeletal
+reconstruction and markerless motion capture as have been demonstrated
+previously for systems consisting of multiple PTZ
+cameras~\citep{bachmann20193dv} or
+UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
+
+\subsection{Systems and experimental validation}
+
+\begin{itemize}
+  \item Laboratory experiments combining marker-based and markerless evaluation
+    with static calibrated cameras will serve to validate the approach in the
+    first phase
+  \item The second phase will consist of evaluation via field experiments at an
+    outdoor field on the university campus.
+    Metric accuracy will be validated by surveying keypoints in the capture
+    volume and collecting datasets consisting of motion through those keypoints
+  \item Low-cost markerless capture (FreeMoCap) in lab and field
+\end{itemize}
+
 \section{Goals and Milestones}
 
 % Timeline with milestones and deliverables
@@ -260,30 +299,6 @@ based on submodular optimization methods~\citep{suresh2024iros,hughes2024cdc}.
 
 % Research plan and technical approach (methodology, analysis techniques,
 % validation)
-
-\subsection{Research Plan \& Technical Approach}
-
-Autonomous camera view planning is a key element of our approach.
-Our prior works on this topic present methods to optimize and maximize pixel
-densities over subjects' surfaces for multiple cameras
-jointly~\citep{suresh2024iros,hughes2024cdc}.
-This approach applies submodular optimization methods to maximize view quality
-directly without relying on fixed assignments and guaranteeing constant-factor
-suboptimality for approximate solutions to the joint optimization problem.
-Simulation results involving a team of UAVs filming multiple moving subjects
-demonstrated emergent assignment and formation behaviors and superior
-performance compared to formation methods when subjects split and rejoin
-(Fig.~\ref{fig:qualitative}).
-We propose applying a similar approach to planning for pan-tilt-zoom cameras by
-reformulating the earlier planning problem according to the PTZ configuration
-space.
-
-Having developed a camera controller that autonomously obtains views of subjects
-from multiple perspectives, we plan to adopt similar methods for skeletal
-reconstruction and markerless motion capture as have been demonstrated
-previously for systems consisting of multiple PTZ
-cameras~\citep{bachmann20193dv} or
-UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 
 \begin{figure*}
 \centering
@@ -329,18 +344,6 @@ UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
   }
   \label{fig:hardware-systems}
 \end{figure}
-
-\subsection{Validation}
-\begin{itemize}
-  \item Laboratory experiments combining marker-based and markerless evaluation
-    with static calibrated cameras will serve to validate the approach in the
-    first phase
-  \item The second phase will consist of evaluation via field experiments at an
-    outdoor field on the university campus.
-    Metric accuracy will be validated by surveying keypoints in the capture
-    volume and collecting datasets consisting of motion through those keypoints
-  \item Low-cost markerless capture (FreeMoCap) in lab and field
-\end{itemize}
 
 % Expected outcomes and results (separate tangible and intangible outcomes)
 \section{Expected output \& innovation}
