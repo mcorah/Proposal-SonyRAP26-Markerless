@@ -151,6 +151,7 @@ development of a new class of low-cost and unobtrusive markerless motion capture
 systems that can be readily installed to capture motion in large open spaces
 such as sports facilities and arenas.}
 
+\micah{Some of this should maybe be gap text}
 The research community meanwhile has sought to cast away the anchor of
 fixed infrastructure by developing markerless motion capture capabilities around
 formations of UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
@@ -165,19 +166,15 @@ circular formation around one subject, capturing multiple subjects, especially
 if those subjects may sometimes move apart, poses a significant challenge
 regarding view planning and coordination.
 
-Rather than controlling the locations of the cameras to follow the subject or
-subjects, we may consider directing the fields-of-view of a small number of
-fixed cameras to similarly observe and reconstruct motions of the subjects as
-they move about a large capture volume.
-In fact, markerless motion capture with pan-tilt-zoom (PTZ) cameras at fixed
-locations but with uncertain orientations has been studied along with
-application to downhill skiing~\citep{bachmann20193dv}.
-Yet, there has been little interest overall in developing markerless motion
-capture systems based on PTZ cameras and that is despite use of gimbal cameras
-with aerial systems.
-Moreover, neither body of work addresses the general problem of controlling
-viewpoints and zoom for multiple cameras, especially as subjects may move apart
-and come back together again.
+Alternatively, systems based on static pan-tilt-zoom
+cameras~\citep{bachmann20193dv,yamamoto2022visigrapp}
+could strike a balance---providing benefits of camera coordination
+(e.g. operation in large and outdoor spaces) without limitations of aerial
+systems.
+Yet---perhaps inextricably---there has been limited interest in developing such
+systems, and works in this area exhibit some of the same limitations as aerial
+systems such as limitation in scope to capturing motion of only a single
+subject.
 
 \subsection{Challenges}
 
@@ -286,11 +283,28 @@ Developing methods for motion capture that are not subject to such severe
 operational limits while still providing large capture volumes with small numbers
 of cameras is desirable.
 
-\ifdev{
 \subsection{Gap: Motion capture with pan-tilt-zoom units}
-}
 
-\micah{Fill in brief detail on PTZ units}
+\micah{add second motion ptz capture paper}
+Rather than controlling the locations of aerial cameras to follow the subject or
+subjects, we may consider directing the fields-of-view of a small number of
+fixed cameras to likewise observe and reconstruct motions of subjects as they
+move about a contained volume~\citep{bachmann20193dv,yamamoto2022visigrapp}.
+\citet{bachmann20193dv} developed one such
+ markerless motion capture system with pan-tilt-zoom (PTZ) cameras at fixed
+locations but with uncertain orientations, and they present application and
+results for tracking skeletal pose of a downhill skier.
+Yet, there has been little interest overall in developing markerless motion
+capture capabilities based on PTZ cameras.
+
+These prior works based on PTZ cameras and likewise those built around aerial
+vehicles equipped analogously with gimbal cameras demonstrate feasibility of
+tracking and reconstructing kinematic motion with moving cameras.
+Yet still, neither body of work addresses the general problem of coordinating
+viewpoints and zoom for multiple cameras to film multiple subjects.
+Nor do they address challenges related to common human motions
+such as a group of athletes that comes together, spreads apart, and reorganizes
+over the course of a play.
 
 \subsection{Gap: Camera coordination}
 
