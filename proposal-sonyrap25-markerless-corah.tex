@@ -462,19 +462,20 @@ capture will be limited to reconstruction of human skeletal pose.
 If this project is extended for another year, we expect to focus on enabling
 dense motion capture and reconstruction.
 Methods for dense reconstruction of dynamic environments, e.g. methods for
-dynamic Gaussian splatting~\citep{zheng2025cvpr} are quickly making dense
+dynamic Gaussian splatting~\citep{zheng2025cvpr}, are quickly making dense
 dynamic reconstruction more accessible.
-However, current methods are often limited to laboratory environments and
-additional instrumentation to compute accurate depth
+However, current methods are largely limited to laboratory environments and
+may require additional instrumentation to compute accurate depth
 measurements~\citep{zheng2025cvpr}.
 
+\micah{More plausible use of depth and reconstruction}
 We expect our activities would focus on developing sytems for dense
 reconstruction and addressing subsequent challenges for planning and autonomy.
-From a systems standpoint, achieving dense reconstruction with PTZ camera will
-likely involve
-extension of metric depth estimation models \citet{} suitable for cameras with
-variable intrinsics and integrating with state-of-art tools for Gaussian
-splatting~\citep{zheng2025cvpr}.
+From a systems standpoint, achieving dense reconstruction with PTZ cameras will
+require
+development of models for metric depth estimation~\citep{ke2024cvpr} suitable
+for cameras with variable intrinsics and integrating with state-of-art tools for
+Gaussian splatting~\citep{zheng2025cvpr}.
 Moreover, we expect dense, dynamic reconstruction to exacerbate challenges
 related to \emph{resolution} and \emph{coverage}.
 At the same time, a strength of our approach is that because we model and
