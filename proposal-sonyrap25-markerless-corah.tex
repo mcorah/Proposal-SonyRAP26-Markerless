@@ -233,6 +233,71 @@ sports media.
 \end{itemize}
 \end{comment}
 
+\subsection{Gap: aerial motion capture}
+
+Although systems for marker-based and markerless motion capture are typically
+built around static cameras, there has recently been some interest in developing
+markerless motion capture systems based around mobile, especially aerial,
+cameras~\citep{ho2021iros,saini2022ral,saini2019iccv,hong2024eccv,zhou2018icra}.
+All demonstrate feasibility of reconstructing human skeletal motion via data
+produced by camera-equipped aerial vehicles, often via gimbal cameras with zoom
+function.
+Moreover, these methods enable motion capture in outdoor spaces and with loose
+bounds on the subject's motion.
+However, these methods are subject to significant technical and operational
+limitations:
+\begin{enumerate}
+  \item Limited number of tracked subjects
+  \item Limited coordination of camera motion and zoom
+  \item Operational constraints: battery life, safety, and policy
+\end{enumerate}
+
+The referenced works on aerial motion capture all focus on reconstructing motion
+for a single subject---in each case camera coordination or control is centered
+on the subject often via a circular formation consisting of 3--4 aerial
+vehicles.
+These systems could hypothetically be adapted to capture multiple subjects such
+as by fitting a circle around the group and constructing a formation around the
+center.
+However, if subjects spread apart, formation schemes will eventually fail.
+
+Specifically, these prior works do not address challenges related to
+coordinating multiple cameras to film subjects that may spread apart or form and
+reform groups.
+Nor do these works address control of camera intrinsics such as zoom.
+
+Aside from technical limitations and although the challenge of aerial motion
+capture is compelling,
+aerial platforms do not necessarily provide a desirable format for motion
+capture.
+Limits on battery life produce either limits on operation time or else intense
+logistical challenges related to refreshing batteries.
+Operators must also ensure the safety of subjects being filmed by some
+combination of safety pilots, rigorous testing and coordination, and small or
+human-safe platforms---moreover, operation must satisfy policy constraints
+related to operation of aerial vehicles.
+Developing methods for motion capture that are not subject to such severe
+operational limits while still providing large capture volumes with small numbers
+of cameras is desirable.
+
+\subsection{Gap: Motion capture with pan-tilt-zoom units}
+
+\subsection{Gap: Camera coordination}
+
+Camera coordination for multi-perspective filming tasks is has not yet been
+studied extensively.
+Just as regarding motion capture, these methods often adopt representations that
+center a single subject~\citep{bucker2021icra,xu2022iros}.
+On the other hand, methods for multi-robot active perception or information
+gathering~\citep{singh2009,corah2019auro,atanasov2015icra} address theoretic and
+practical challenges related to coordinating multiple sensors or cameras
+\emph{but not for the purpose of multi-perspective filming}---rather existing
+works emphasize problems such as
+sampling spatio-temporal phenomena~\citep{singh2009},
+localizing targets~\cite{atanasov2015icra}, or
+mapping a three-dimensional environment~\citep{corah2019auro}.
+Our recent contributions develop methods for coordination of multiple cameras
+that are suitable for filming tasks~\citep{hughes2024cdc,suresh2024iros}.
 
 \subsection{Contributions}
 
