@@ -14,6 +14,15 @@
 Alternate keyword/group areas to reference:
 * Infotech, CV (pose estimation and such)
 
+## Final submission (instructions from Krista Morrow)
+
+"PI-submitted proposal through Sony’s webform"
+
+"on submission day, I’ll need to see the official final documents along with a
+PDF or screenshots of the proposal in its final form in the webform"
+
+"The technical document should ideally be completed by 9 AM on submission day."
+
 ## Keyword and award type
 
 I chose capture planning because the core contribution is under robotics and
