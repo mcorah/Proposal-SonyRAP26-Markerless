@@ -467,6 +467,37 @@ precision and functional capacity for the prototype system.
   \item Low-cost markerless capture (FreeMoCap) in lab and field
 \end{itemize}
 
+We have begun developing a multi-camera system consisting of four Axis
+pan-tilt-zoom cameras for the purpose of filming and cinematography tasks
+(Fig.~\ref{subfig:videography}).
+A Realsense RGBD camera mounted at high angle enables detection and tracking
+in the laboratory setting---for tracking in outdoor environments we have
+developed a tracking system that relies on a flat ground assumption and only RGB
+data.
+The pictured scene illustrates a system demo---three cameras track and film a
+plush toy representing the Mines mascot ``Blaster the Burro."
+
+After developing the prototype motion capture system, we will validate the
+proposed approach via a combination of laboratory and field experiments.
+We will conduct laboratory experiments in an indoor motion capture space
+($2\mathrm{m} \times 2\mathrm{m} \times 3.5\mathrm{m}$ interior volume)
+equipped with a marker-based Optitrack motion capture system
+(Fig.~\ref{subfig:motion_capture}).
+Experiments comparing to marker-based capture will require use of motion capture
+suits and marker beads.
+Therefore, we also plan to conduct experiments with a small number of
+conventional RGB cameras and will leverage open source software for skeletal
+motion capture.\footnote{%
+  FreeMoCap: \url{https://freemocap.org/}
+}
+Outdoor experiments on the Mines campus will focus on testing system
+functionality in challenging
+scenarios featuring large capture volumes, multiple subjects, and complex
+motions---we will also leverage these experiments to develop datasets suitable
+for skeletal and dense reconstruction.
+We will evaluate precision by setting up static cameras to capture motions in a
+smaller region and by locating cameras with surveying equipment.
+
 \section{Goals and Milestones}
 
 \micah{Compress timeline}
