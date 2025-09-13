@@ -675,7 +675,11 @@ proposed work.
 % Fakesection: Bibliography
 \bibliographystyle{plainnat}
 \setlength{\bibsep}{4pt plus 0.3ex}
-\bibliography{publisher_abbreviations,micah_corah_papers,markerless_refs,bibliography}
+{
+  \linespread{0.2}
+  \footnotesize
+  \bibliography{publisher_abbreviations,micah_corah_papers,markerless_refs,bibliography}
+}
 
 \newpage
 \section{Budget}
