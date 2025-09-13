@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools,bbm}
+\usepackage{enumitem}
 
 \usepackage{comment}
 
@@ -178,17 +179,67 @@ subject.
 
 \subsection{Challenges}
 
-\begin{itemize}
-  \item Distributing camera views over subjects and obtain observations from
-    multiple perspectives
-  \item Coverage of multiple subjects and groups that may spread out or
-    rearrange
+The proposed work will address two sets of challenges, those related to
+\emph{systems and integration} and to
+\emph{camera coordination}.
+
+\paragraph{Systems and integration challenges}
+
+\begin{enumerate}
+  \item Scaling of infrastructure requirements with capture volume
   \item Identifying and tracking subjects for motion capture and predicting
     their motion
   \item Uncertainty in intrinsics and extrinsics
+\end{enumerate}
+The key practical challenge we are interested in is that conventional motion
+capture systems rely on fixed camera configuration to produce extensive and
+multiple coverage over a capture volume---while fixed configurations may be
+economical for small, often indoor, volumes scaling to large an outdoor spaces,
+e.g. for \emph{in situ} capture of sporting events, leads to prohibitive costs
+as requirements for numbers of cameras and the size of their support structure
+multiple many times over.
+Further, intensification of infrastructure requirements also produces secondary
+conflicts such as obscuring spectators' views of athletes.
+
+However, dispensing with fixed cameras
+%and adopting controlled or mobile cameras
+leads to new technical challenges.
+Identifying subjects and tracking and forecasting locations becomes critical
+to the goal of coordination as pictured in Fig.~\ref{fig:markerless_system}.
+Likewise, adjusting camera orientation and zoom while simultaneously collecting
+data to reconstruct subjects' motions undermines requirements for precise
+extrinsic and intrinsic calibration.
+This will necessitate development of methods that adapt
+calibration continuously---estimated via feedback from mechanical encoders and
+fine-tuned via image registration---or adopting methods amenable to uncalibrated
+systems~\citep{bachmann20193dv,xu2022bmvc}.
+%We will begin to address these challenges by prototyping our proposed approach
+%and collecting datasets suitable for evaluating and eventually improving
+%precision.
+
+\paragraph{Camera coordination challenges}
+
+\begin{enumerate}[resume]
+  \item Distributing camera views over subjects and obtaining observations from
+    multiple perspectives
+  \item Maintaining coverage of multiple subjects and groups that spread out and
+    rearrange
   \item Achieving adequate coverage and detail for the desired reconstruction
-    task
-\end{itemize}
+    task (kinematic pose, dense reconstruction)
+\end{enumerate}
+The requirements for capturing motions of multiple subjects such as athletes
+suggest developing methods suitable to coordinate cameras to observe all
+subjects at once and from multiple perspectives.
+Further, while we propose evaluation by reconstructing kinematic pose, we seek
+to develop systems suitable for future application for dense
+reconstruction---the capacity to optimize camera zoom to increase resolution
+over the surface of relevant portions of the subjects and scene becomes
+paramount for potential downstream applications, e.g. synthesizing a novel and
+photorealistic video feed as an entertainment technology.
+%
+These challenges, in particular, are \emph{fundamental to motion capture and
+related filming tasks} and are not specific to given applications or the
+proposed systems approach.
 
 \subsection{Impacts}
 
