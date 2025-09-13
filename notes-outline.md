@@ -81,6 +81,10 @@ Preliminary results... intersperse?
 
 * Injury tracking (see relevant paper)
 
+* Animation
+* Sports and entertainment
+* Practice film
+
 ## Sony Multi-robot outline
 
 * Abstract (and theme)
