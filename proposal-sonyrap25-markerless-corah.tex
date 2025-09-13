@@ -424,6 +424,24 @@ We propose applying a similar approach to planning for pan-tilt-zoom cameras by
 reformulating the earlier planning problem according to the PTZ configuration
 space.
 
+\begin{figure*}
+\centering
+\setlength{\tabcolsep}{1pt}
+\setlength{\figureheight}{1.2in}
+      \resizebox{\linewidth}{!}{
+      \input{figures/qualtiative}
+      }
+      \caption{%
+        Illustration of a view planning scenario taken
+        from~\citep{hughes2024cdc}.
+        Robots successfully track subjects despite pairs switching partners as
+        they cross.
+        \emph{Although this example features drones, the same methods are
+        applicable to coordination of other sorts of camera platforms.}
+      }%
+      \label{fig:multi-robot-videography}
+\end{figure*}
+
 \subsection{Reconstruction}
 
 Having developed a camera controller that autonomously obtains views of subjects
@@ -471,24 +489,6 @@ UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 
 % Research plan and technical approach (methodology, analysis techniques,
 % validation)
-
-\begin{figure*}
-\centering
-\setlength{\tabcolsep}{1pt}
-\setlength{\figureheight}{1.2in}
-      \resizebox{\linewidth}{!}{
-      \input{figures/qualtiative}
-      }
-      \caption{%
-        Illustration of a view planning scenario taken
-        from~\citep{hughes2024cdc}.
-        Robots successfully track subjects despite pairs switching partners as
-        they cross.
-        \emph{Although this example features drones, the same methods are
-        applicable to coordination of other sorts of camera platforms.}
-      }%
-      \label{fig:multi-robot-videography}
-\end{figure*}
 
 \begin{figure}
   \centering
