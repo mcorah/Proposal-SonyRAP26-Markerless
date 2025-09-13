@@ -292,8 +292,9 @@ models for digital humans.
 \end{itemize}
 \end{comment}
 
-\subsection{Gap: aerial motion capture}
+\subsection{Gap: Robotic markerless motion capture}
 
+\paragraph{Aerial motion capture}
 Although systems for marker-based and markerless motion capture are typically
 built around static cameras, there has recently been some interest in developing
 markerless motion capture systems based around mobile, especially aerial,
@@ -319,39 +320,44 @@ These systems could hypothetically be adapted to capture multiple subjects such
 as by fitting a circle around the group and constructing a formation around the
 center.
 However, if subjects spread apart, formation schemes will eventually fail.
-
-Specifically, these prior works do not address challenges related to
+Thus, these prior works do not address challenges related to
 coordinating multiple cameras to film subjects that may spread apart or form and
 reform groups.
 Nor do these works address control of camera intrinsics such as zoom.
 
-Aside from technical limitations and although the challenge of aerial motion
-capture is compelling,
+Further, while challenge of aerial motion capture is compelling,
 aerial platforms do not necessarily provide a desirable format for motion
 capture.
-Limits on battery life produce either limits on operation time or else intense
-logistical challenges related to refreshing batteries.
-Operators must also ensure the safety of subjects being filmed by some
+Limits on battery life lead to limits on operation time or else
+logistical challenges, and
+operators must ensure the safety concerns for subjects being filmed.
+Development of a more economical class of systems that provides similar
+affordances, operation in large and outdoor volumes, is desirable.
+
+
+\begin{comment}
+\ldots
+by some
 combination of safety pilots, rigorous testing and coordination, and small or
 human-safe platforms---moreover, operation must satisfy policy constraints
 related to operation of aerial vehicles.
 Developing methods for motion capture that are not subject to such severe
 operational limits while still providing large capture volumes with small numbers
 of cameras is desirable.
+\end{comment}
 
-\subsection{Gap: Motion capture with pan-tilt-zoom units}
-
+\paragraph{Pan-tilt-zoom motion capture}
 \micah{add second motion ptz capture paper}
 Rather than controlling the locations of aerial cameras to follow the subject or
-subjects, we may consider directing the fields-of-view of a small number of
-fixed cameras to likewise observe and reconstruct motions of subjects as they
+subjects, consider directing the fields-of-view of a small number of
+fixed cameras to observe and reconstruct motions of subjects as they
 move about a contained volume~\citep{bachmann20193dv,yamamoto2022visigrapp}.
 \citet{bachmann20193dv} developed one such
- markerless motion capture system with pan-tilt-zoom (PTZ) cameras at fixed
+markerless motion capture system with pan-tilt-zoom (PTZ) cameras at fixed
 locations but with uncertain orientations, and they present application and
 results for tracking skeletal pose of a downhill skier.
-Yet, there has been little interest overall in developing markerless motion
-capture capabilities based on PTZ cameras.
+Yet, there has been little interest beyond these few works in developing
+markerless motion capture capabilities based on PTZ cameras.
 
 These prior works based on PTZ cameras and likewise those built around aerial
 vehicles equipped analogously with gimbal cameras demonstrate feasibility of
