@@ -457,25 +457,14 @@ precision and functional capacity for the prototype system.
 
 \subsection{Systems and experimental validation}
 
-\begin{itemize}
-  \item Laboratory experiments combining marker-based and markerless evaluation
-    with static calibrated cameras will serve to validate the approach in the
-    first phase
-  \item The second phase will consist of evaluation via field experiments at an
-    outdoor field on the university campus.
-    Metric accuracy will be validated by surveying keypoints in the capture
-    volume and collecting datasets consisting of motion through those keypoints
-  \item Low-cost markerless capture (FreeMoCap) in lab and field
-\end{itemize}
-
 We have begun developing a multi-camera system consisting of four Axis
 pan-tilt-zoom cameras for the purpose of filming and cinematography tasks
 (Fig.~\ref{subfig:videography}).
 A Realsense RGBD camera mounted at high angle enables detection and tracking
 in the laboratory setting---for tracking in outdoor environments we have
-developed a tracking system that relies on a flat ground assumption and only RGB
+developed a tracking system that relies on a flat ground assumption and RGB
 data.
-The pictured scene illustrates a system demo---three cameras track and film a
+The pictured scene illustrates a system demo: three cameras track and film a
 plush toy representing the Mines mascot ``Blaster the Burro."
 
 After developing the prototype motion capture system, we will validate the
@@ -484,48 +473,23 @@ We will conduct laboratory experiments in an indoor motion capture space
 ($2\mathrm{m} \times 2\mathrm{m} \times 3.5\mathrm{m}$ interior volume)
 equipped with a marker-based Optitrack motion capture system
 (Fig.~\ref{subfig:motion_capture}).
-Experiments comparing to marker-based capture will require use of motion capture
-suits and marker beads.
+However, experiments comparing to marker-based capture will require use of
+motion capture suits and reflective marker beads.
 Therefore, we also plan to conduct experiments with a small number of
 conventional RGB cameras and will leverage open source software for skeletal
 motion capture.\footnote{%
   FreeMoCap: \url{https://freemocap.org/}
 }
+
 Outdoor experiments on the Mines campus will focus on testing system
 functionality in challenging
 scenarios featuring large capture volumes, multiple subjects, and complex
 motions---we will also leverage these experiments to develop datasets suitable
 for skeletal and dense reconstruction.
 We will evaluate precision by setting up static cameras to capture motions in a
-smaller region and by locating cameras with surveying equipment.
-
-\section{Goals and Milestones}
-
-\micah{Compress timeline}
-
-The timeline and milestones for the proposed work are as follows:
-
-% Timeline with milestones and deliverables
-\begin{itemize}
-  \item (Aug--Oct '26) Prototype multi-camera view planning in indoor
-    laboratory environment
-  \item (Nov '26--Jan '27) Prototype 3D skeletal reconstruction based on
-    pan-tilt-zoom camera streams
-  \item (Feb '27) Perform comparative experiments for skeletal reconstruction in
-    lab setting
-  \item (Feb '27) \textbf{Milestone:} submit paper based on initial system and
-    experiments to IROS'27
-  \item (March--April '27) Develop and evaluate person-tracking system for large
-    environment based on flat ground assumption
-  \item (May '27) Integrate updated tracking system; develop systems and
-    procedures for large scale outdoor experiments
-  \item (June '27) Perform experiments on outdoor fields
-  \item (July--Aug '27) \textbf{Milestone:}
-    Write paper based on field experiments for submission to ICRA'28
-\end{itemize}
-
-% Research plan and technical approach (methodology, analysis techniques,
-% validation)
+smaller portion of the volume, and
+we will register the coordinate frames of the two motion capture systems
+by locating cameras with surveying equipment (e.g. by using a total station).
 
 \begin{figure}
   \centering
@@ -553,6 +517,32 @@ The timeline and milestones for the proposed work are as follows:
   }
   \label{fig:hardware-systems}
 \end{figure}
+
+
+\section{Goals and Milestones}
+
+\micah{Compress timeline}
+
+The timeline and milestones for the proposed work are as follows:
+
+% Timeline with milestones and deliverables
+\begin{itemize}
+  \item (Aug--Oct '26) Prototype multi-camera view planning in indoor
+    laboratory environment
+  \item (Nov '26--Jan '27) Prototype 3D skeletal reconstruction based on
+    pan-tilt-zoom camera streams
+  \item (Feb '27) Perform comparative experiments for skeletal reconstruction in
+    lab setting
+  \item (Feb '27) \textbf{Milestone:} submit paper based on initial system and
+    experiments to IROS'27
+  \item (March--April '27) Develop and evaluate person-tracking system for large
+    environment based on flat ground assumption
+  \item (May '27) Integrate updated tracking system; develop systems and
+    procedures for large scale outdoor experiments
+  \item (June '27) Perform experiments on outdoor fields
+  \item (July--Aug '27) \textbf{Milestone:}
+    Write paper based on field experiments for submission to ICRA'28
+\end{itemize}
 
 % Expected outcomes and results (separate tangible and intangible outcomes)
 \section{Expected output \& outcomes}
