@@ -502,6 +502,8 @@ smaller region and by locating cameras with surveying equipment.
 
 \micah{Compress timeline}
 
+The timeline and milestones for the proposed work are as follows:
+
 % Timeline with milestones and deliverables
 \begin{itemize}
   \item (Aug--Oct '26) Prototype multi-camera view planning in indoor
@@ -554,7 +556,7 @@ smaller region and by locating cameras with surveying equipment.
 % Expected outcomes and results (separate tangible and intangible outcomes)
 \section{Expected output \& innovation}
 
-The specific outcomes of proposed work are as follows:
+The specific outcomes of proposed work will include:
 \begin{itemize}
   \item Publication of approach and results in premier robotics
     conferences (IROS and ICRA)
@@ -563,7 +565,8 @@ The specific outcomes of proposed work are as follows:
     moving subjects
   \item Laboratory and field evaluation of above system
   \item Open source release of planner implementation and other software modules
-    where appropriate
+  \item Dataset release for motion reconstruction in large volumes
+    with uncertain calibration
 \end{itemize}
 We expect that our work will spur increased interest in development of similar
 low-cost, high-capture-volume motion capture methods.
@@ -581,8 +584,8 @@ reconstruction such based on Gaussian splatting.
 
 \micah{Future work is a bit all over the place. Revise and clean up.}
 
-During the initial one-year timeline, our research efforts on markerless motion
-capture will be limited to reconstruction of human skeletal pose.
+During the initial one-year timeline, our research efforts will be limited in
+scope to reconstruction of human skeletal pose.
 If this project is extended for another year, we expect to focus on enabling
 dense motion capture and reconstruction.
 Methods for dense reconstruction of dynamic environments, e.g. methods for
@@ -593,13 +596,15 @@ may require additional instrumentation to compute accurate depth
 measurements~\citep{zheng2025cvpr}.
 
 \micah{More plausible use of depth and reconstruction}
-We expect our activities would focus on developing sytems for dense
+We expect our activities would focus on developing systems for dense
 reconstruction and addressing subsequent challenges for planning and autonomy.
-From a systems standpoint, achieving dense reconstruction with PTZ cameras will
-require
-development of models for metric depth estimation~\citep{ke2024cvpr} suitable
-for cameras with variable intrinsics and integrating with state-of-art tools for
-Gaussian splatting~\citep{zheng2025cvpr}.
+From a systems standpoint, achieving dense reconstruction with PTZ cameras
+may leverage models for metric depth estimation~\citep{ke2024cvpr}
+but will likely still involve challenging registration and optimization
+problems.
+However, developing such capabilities would enable integration with
+state-of-art methods for novel view synthesis with dynamic scenes such as based
+on Gaussian splatting~\citep{zheng2025cvpr}.
 Moreover, we expect dense, dynamic reconstruction to exacerbate challenges
 related to \emph{resolution} and \emph{coverage}.
 At the same time, a strength of our approach is that because we model and
@@ -608,7 +613,7 @@ therefore suitable to incorporating these twin challenges into our design and
 modeling.
 In this sense, coverage and resolution are requirements---we can adapt our
 planning approach accordingly and design camera systems (numbers, placements,
-and models of cameras) to meet these requirements.
+and models of cameras) to meet specified requirements.
 
 % Describe team composition
 \section{Team and experience}
