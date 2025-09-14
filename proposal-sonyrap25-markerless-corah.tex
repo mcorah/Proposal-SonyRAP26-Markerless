@@ -145,8 +145,8 @@ worlds\footnote{%
 to the ability to collect biomechanics data for medical evaluations with minimal
 time and preparation~\citep{wade2022peerj}.
 Yet, like their marker-based cousins, these systems consist of large numbers of
-cameras (e.g. 8+) that must be carefully located and mounted to tripods or a
-truss system and rigorously calibrated.
+cameras (e.g. 8+) that must be carefully located, mounted to tripods or a
+truss system, and rigorously calibrated.
 One of the goals of this project will be to \textbf{prototype and spur
 development of a new class of low-cost and unobtrusive markerless motion capture
 systems that can be readily installed to capture motion in large open spaces
@@ -159,9 +159,10 @@ formations of UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 While these aerial systems would not promise accuracy comparable to systems
 built around fixed cameras with calibrated extrinsics, they instead promise the
 ability to reconstruct human motion outdoors and largely without bounds.
-These systems have another, less obvious, limitation: research on aerial
-markerless motion capture has largely focused on reconstructing motion of
-individual people.
+However, these systems have another, less obvious, limitation: research on
+aerial markerless motion capture has largely focused only on reconstructing
+motions of individual people and neglects to address reconstruction of motions
+of groups.
 Further, because these approaches generally rely on robots that fly in a
 circular formation around one subject, capturing multiple subjects, especially
 if those subjects may sometimes move apart, poses a significant challenge
@@ -177,8 +178,8 @@ systems, and works in this area exhibit some of the same limitations as aerial
 systems such as limitation in scope to capturing motion of only a single
 subject.
 
-A key focus of our work will be to introduce methods for camera coordination
-for filming applications that we have recently
+Therefore, a key focus of our work will be to introduce methods for camera
+coordination for filming multiple moving subjects that we have recently
 proposed~\citep{hughes2024cdc,suresh2024iros}
 (Fig.~\ref{fig:multi-robot-videography}) and apply these methods to the
 development of a markerless motion capture system.
