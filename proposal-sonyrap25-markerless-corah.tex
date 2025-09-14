@@ -196,17 +196,16 @@ The proposed work will address two sets of challenges, those related to
 
 \begin{enumerate}
   \item Scaling of infrastructure requirements with capture volume
-  \item Identifying and tracking subjects for motion capture and predicting
-    their motion
+  \item Identifying and tracking subjects and forecasting motion
   \item Uncertainty in intrinsics and extrinsics
 \end{enumerate}
 The key practical challenge we are interested in is that conventional motion
-capture systems rely on fixed camera configuration to produce extensive and
+capture systems rely on fixed camera configurations to produce extensive and
 multiple coverage over a capture volume---while fixed configurations may be
-economical for small, often indoor, volumes scaling to large an outdoor spaces,
+economical for small, often indoor, volumes scaling to large and outdoor spaces,
 e.g. for \emph{in situ} capture of sporting events, leads to prohibitive costs
 as requirements for numbers of cameras and the size of their support structure
-multiple many times over.
+multiply many times over.
 Further, intensification of infrastructure requirements also produces secondary
 conflicts such as obscuring spectators' views of athletes.
 
@@ -218,7 +217,7 @@ to the goal of coordination as pictured in Fig.~\ref{fig:markerless_system}.
 Likewise, adjusting camera orientation and zoom while simultaneously collecting
 data to reconstruct subjects' motions undermines requirements for precise
 extrinsic and intrinsic calibration.
-This will necessitate development of methods that adapt
+This will necessitate development of motion capture methods that adapt
 calibration continuously---estimated via feedback from mechanical encoders and
 fine-tuned via image registration---or adopting methods amenable to uncalibrated
 systems~\citep{bachmann20193dv,xu2022bmvc}.
