@@ -2,7 +2,7 @@
 
 * Proposal title: (copy details)
 * Keywords: Active Perception, Markerless Motion Capture, Human Pose Estimation
-  and Tracking
+  and Tracking, Multi-Agent Systems
 * Award type: Faculty Innovation Award
 * Primary keyword:
     * Major category: Entertainment technology
@@ -10,6 +10,8 @@
     * Keyword: Capture Planning for Large 3D Spaces
 * CV: Attach
 * SAT code: 4073
+
+Confirmation number: 497939
 
 Alternate keyword/group areas to reference:
 * Infotech, CV (pose estimation and such)
