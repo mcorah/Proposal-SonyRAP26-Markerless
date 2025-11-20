@@ -4,9 +4,9 @@ Fundamentally, motion blur is a product of motion of the scene relative
 to the camera over the duration of the exposure of a frame.
 Impacts of motion blur can be mitigated by reducing exposure duration, reducing
 relative motion, or by building systems that are robust to motion blur.
-From the perspective of markerless motion capture with PTZ cameras, we could
-consider impacts of motion blur at several location in the design and evaluation
-of a system.
+From the perspective of markerless motion capture with PTZ cameras, we should
+consider impacts of motion blur at several locations in the design and
+evaluation of a system.
 
 The scene and hardware will have significant impacts.
 A brightly lit scene and lenses with large apertures would enable reduction in
@@ -20,7 +20,7 @@ imaging more broadly during initial phases of prototyping and evaluation.
 
 For example, the severity of impacts of motion blur depend on the nature
 and resolution of the output of the markerless motion capture system.
-This provides one reason for our focus on 3D skeletal reconstruction for the
+This provides one motivation for our focus on 3D skeletal reconstruction for the
 duration of the proposed work---we expect that skeletal reconstructions would be
 less impacted by motion blur or other aberrations than, for example, dense
 reconstruction of surfaces.
@@ -28,7 +28,7 @@ reconstruction of surfaces.
 Likewise, we can mitigate blur trivially by designing laboratory and field
 experiments where cameras and subjects move at low or limited velocities.
 Thus, motion blur would not prevent us from validating our basic approach.
-Nor would motion blur limit the size of capture volumes when performing field
+Nor would motion blur limit the size of the capture volume when performing field
 experiments.
 
 On the other hand, laboratory and field experiments may provide the first point
@@ -36,28 +36,26 @@ in the process of evaluation and development where we would encounter motion
 blur and have an opportunity to evaluate impacts of motion blur on system
 performance.
 Simulation experiments may not feature motion blur or other effects unless we
-specifically seek out or develop simulation tools that model motion blur or
-other effects.
+are able to incorporate tools that model motion blur or other effects.
 In this sense, motion blur is a challenge that motivates physical experiments
-and photorealistic simulation.
+and consideration of photorealistic simulation tools.
 
 Motion blur can also be mitigated at the level of planning and control such as
 by designing smooth motions that avoid inducing vibration or by introducing
 terms in the optimization process that encode a preference for low relative
 velocities.
 This strategy aligns closely with our expertise in perception-aware planning and
-control and would be representative of the kind of mitigation strategy we would
-be apt to pursue.
+control and would be in scope and of interest to us.
 
 Finally, the system for image processing and reconstruction can be *made
 robust* to motion blur.
 For example, predicted or observed motion blur could be used to reject
 observations or to model uncertainty.
-Such as strategy could enable rejection of observations of some subjects in the
-camera field of view and rejections of others which could admit greater
+Such a strategy could enable rejection of observations of some subjects in the
+camera field of view and rejection of others which could admit greater
 flexibility in planning and control.
 There is also prior work on motion blur robust NeRF and Gaussian Splatting
-methods (Deblur-NeRF, Deblur-GS, and work by Seiskari et al.)
+methods (Deblur-NeRF, Deblur-GS, and work by Seiskari et al.).
 Such dense reconstruction methods are out of scope over the year of proposed
 work but highlight intensified challenges for obtaining dense reconstructions
 with camera motion that we may encounter in future years.
