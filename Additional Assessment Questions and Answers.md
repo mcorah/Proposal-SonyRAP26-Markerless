@@ -78,8 +78,7 @@ optimization).
 We refer to such problems in Section 6.1 of the proposal as a matter of future
 work.
 As proposed, this specific problem would be out of scope and distinct from
-proposed work such as related to prototyping methods for markerless motion
-capture.
+proposed work involving prototyping methods for markerless motion capture.
 Nevertheless, this problem is of interest to us and could be incorporated into
 proposed or future activities given suitable time and support.
 
@@ -111,12 +110,12 @@ in the context of coordination of aerial robots, such as policy restrictions
 related to operation of aerial robots or safety concerns for operating robots,
 especially aerial robots, near people, e.g. on a sports field.
 Likewise, introducing additional actuation and particularly motion that cannot
-easily be registered via linear or rotary encoders would conflict with the goal
+easily be registered via linear or rotary encoders could conflict with the goal
 of precisely tracking moving subjects for the purpose of markerless capture.
 
 Occlusions can also be mitigated by other means such as by placing more cameras
 or optimizing locations as per prior discussion of system design problems.
-Ultimately, occlusions are also factor that will limit both static and mobile
+Ultimately, occlusions are also a factor that will limit both static and mobile
 cameras---all may be excluded and occluded from the interior of a close
 formation of athletes---and the appropriate mitigation strategy may depend on
 the nature of the task (cinematography or motion capture) or the type and
