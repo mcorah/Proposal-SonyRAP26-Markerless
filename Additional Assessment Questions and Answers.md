@@ -1,18 +1,6 @@
 # When tracking moving subjects with PTZ cameras, motion blur may make human detection and pose estimation difficult. What approaches do you envision to handle this issue?
 
-* Camera hardware: high-framerates, good lighting, and low exposure can mitigate
-  impacts of blur and effects of rapid motion
-* Outputs and resolution: We plan to focus on pose reconstruction over the
-  proposed timeline
-* Experiment design: prototype with slower moving subjects
-* Camera control and smooth trajectories, modeling control and blur
-  interactions, modeling intrinsics and blur
-* CV: Image processing techniques that account for blur or segment blurred vs
-  non-blurred regions, learned models may fill in gaps or constrain based on
-  feasible motion
-* Only experiments will address blur (likely not sim)
-
-Fundamentally, motion blur is a product of relative motion of a scene relative
+Fundamentally, motion blur is a product of motion of the scene relative
 to the camera over the duration of the exposure of a frame.
 Impacts of motion blur can be mitigated by reducing exposure duration, reducing
 relative motion, or by building systems that are robust to motion blur.
@@ -27,7 +15,7 @@ So, bright lighting at a sporting event or appropriate choice of camera equipmen
 could each serve to mitigate adverse impacts of motion blur when filming and
 reconstructing motions of quickly-moving athletes.
 
-Some of our choices would seek to sidestep challenges related to motion blur and
+Some of our choices would seek to sidestep motion blur and challenges related to
 imaging more broadly during initial phases of prototyping and evaluation.
 
 For example, the severity of impacts of motion blur depend on the nature
@@ -40,16 +28,39 @@ reconstruction of surfaces.
 Likewise, we can mitigate blur trivially by designing laboratory and field
 experiments where cameras and subjects move at low or limited velocities.
 Thus, motion blur would not prevent us from validating our basic approach.
-Nor would limit the size of capture volumes when performing field experiments.
+Nor would motion blur limit the size of capture volumes when performing field
+experiments.
 
 On the other hand, laboratory and field experiments may provide the first point
 in the process of evaluation and development where we would encounter motion
-blur and be able evaluate impacts of motion blur on system performance.
-Simulations experiments may not feature motion blur or other effects unless we
+blur and have an opportunity to evaluate impacts of motion blur on system
+performance.
+Simulation experiments may not feature motion blur or other effects unless we
 specifically seek out or develop simulation tools that model motion blur or
 other effects.
 In this sense, motion blur is a challenge that motivates physical experiments
 and photorealistic simulation.
+
+Motion blur can also be mitigated at the level of planning and control such as
+by designing smooth motions that avoid inducing vibration or by introducing
+terms in the optimization process that encode a preference for low relative
+velocities.
+This strategy aligns closely with our expertise in perception-aware planning and
+control and would be representative of the kind of mitigation strategy we would
+be apt to pursue.
+
+Finally, the system for image processing and reconstruction can be *made
+robust* to motion blur.
+For example, predicted or observed motion blur could be used to reject
+observations or to model uncertainty.
+Such as strategy could enable rejection of observations of some subjects in the
+camera field of view and rejections of others which could admit greater
+flexibility in planning and control.
+There is also prior work on motion blur robust NeRF and Gaussian Splatting
+methods (Deblur-NeRF, Deblur-GS, and work by Seiskari et al.)
+Such dense reconstruction methods are out of scope over the year of proposed
+work but highlight intensified challenges for obtaining dense reconstructions
+with camera motion that we may encounter in future years.
 
 # Please clarify the assumed input parameters and the range of variables to be optimized in your method. Beyond camera orientation and focal length, would camera positions or the number of cameras also be within the optimization scope?
 
