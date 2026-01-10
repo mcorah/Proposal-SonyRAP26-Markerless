@@ -7,6 +7,9 @@ with any assumed scene conditions?
 
 ## Response
 
+* look into research on markerless capture and applications to make more
+  concrete and to identify uses outside sports
+
 # Expected impact of the proposed approach:
 
 Assuming such scenarios, we would like to understand the expected practical
@@ -18,6 +21,8 @@ other measurable gains?
 
 ## Response
 
+* Need to work through math for e.g. cost reduction and number of cameras
+
 # Research targets:
 
 Given that wide-area sports motion tracking systems, such as Hawk-Eye, are
@@ -28,6 +33,14 @@ treated as one of the research targets and examined with relatively high
 priority within this project.
 
 ## Response
+
+* Contrast to Hawk-Eye sports motion tracking
+
+Some investigation of Gaussian Splatting would be feasible.
+A reasonable experiment design would seek to compare results for PTZ cameras and
+a static camera array on a sparse subset of time-steps.
+In this case, we would focus on comparative evaluation of surface coverage and
+detail for challenging scenes.
 
 # System architecture and scope of deliverables:
 
