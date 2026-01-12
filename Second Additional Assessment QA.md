@@ -132,11 +132,45 @@ priority within this project.
 
 * Contrast to Hawk-Eye sports motion tracking
 
-Some investigation of Gaussian Splatting would be feasible.
-A reasonable experiment design would seek to compare results for PTZ cameras and
-a static camera array on a sparse subset of time-steps.
-In this case, we would focus on comparative evaluation of surface coverage and
-detail for challenging scenes.
+Our initial proposal drew motivation from applications of both dense and
+skeletal reconstruction.
+Our initial focus on skeletal reconstruction would be for pragmatic reasons to
+demonstrate markerless capture with the coordinated camera system.
+However, we are very interested in evaluating and demonstrating capabilities for
+dense reconstruction.
+
+We agree that dense reconstruction and Gaussian Splatting provide the more
+compelling motivation.
+As hinted in the question, Hawk-Eye systems already provide skeletal
+reconstruction capabilities for sports, and applications, such as automated
+refereeing, that rely on metric accuracy may be more suitable to static camera
+arrays.
+The impact of our methods for skeletal reconstruction would be marginal,
+reducing requirements on numbers of cameras for an otherwise viable system.
+However, systems for dense reconstruction at the scale of a stadium do not yet
+exist, and we believe that coordinated camera systems such as what we propose
+would be enabling and transformative for reasons noted in the responses above.
+
+Some investigation relevant to Gaussian Splatting would be feasible in the first
+year.
+First, preliminary analysis of surface coverage could be completed based on
+subjects' positions and poses.
+This analysis would provide further evidence for the hypothesis that
+comparable reconstruction performance could be achieved with many times fewer
+cameras than for a static camera system.
+
+Limited demonstration of Gaussian Splatting may also be possible in the first
+year.
+As noted, methods for dynamic Gaussian Splatting (for reconstruction of moving
+subjects) are less established than methods applied to static scenes.
+A reasonable experiment design might then seek to adapt established methods for
+Gaussian Splatting intended for static scenes and to compare results for PTZ
+cameras and a static camera array on a sparse subsets of time-steps.
+
+As discussed in the last round of questions, challenges like motion blur would
+be amplified for dense reconstruction, and we would initially perform evaluation
+via simulation tools or in a laboratory setting controlled conditions and
+limited velocities.
 
 # System architecture and scope of deliverables:
 
@@ -147,3 +181,26 @@ together), and clarify the scope of the system and software that would be
 provided to Sony?
 
 ## Response
+
+Two of the planning tools we developed previously for multi-camera
+coordination are available under BSD license variants:
+1. https://github.com/castacks/MultiDroneMultiActorFilming
+2. https://github.com/GreedyPerspectives/GreedyPerspectives
+Our ongoing work on multi-camera videography with PTZ cameras builds on the
+first of these.
+We would expect to continue to build on this multi-camera planning codebase and
+to make developments available similarly.
+
+We are also developing a variety of (ROS2-based) tools for camera control and
+for tracking people and moving objects.
+We would expect to make these tools available.
+However, this part of our system is more specialized to our prototype systems
+and may be of reduced interest to Sony.
+
+The sponsored work will also involve development of new tools for (dense
+and/or skeletal) markerless motion capture with PTZ cameras.
+We would expect this part of our system to be less specialized to our laboratory
+prototypes and to be of more interest to sony.
+We would expect to prioritize making this part of the system available to Sony
+and as open source software.
+
