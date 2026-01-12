@@ -93,6 +93,21 @@ reduction in the number of cameras (132 vs 323).
 If athletes move and can be covered in groups of 2-3 on average, the
 gain becomes 5-7.5x.
 
+* Adding prioritization brings this to about 10x
+* Adapting for occlusions in American football: consider athletes lined up at
+  start of play.
+  Observations from sideline are heavily occluded, and sides of players are
+  nearly parallel to views from end-zones.
+  Directing many cameras from varying perspectives narrowly along the line could
+  provide significantly improved coverage for parts of the scene that would
+  otherwise suffer due to severe occlusion.
+  Consider the same number of players as deployed to cover players spread out
+  all over a field.
+  For a static array, 30 cameras might be aimed at a 10m wide strip across the
+  width of the field; compare to 50 or 100 PTZ cameras with views distributed
+  evenly over players' surfaces with denser coverage over regions where players
+  are close together (and that are subsequently impacted by occlusion.
+
 American football
 * 4-6 cameras * 22 athletes
 * 110m * 49m / (10m)^2 * 6-10 cameras
