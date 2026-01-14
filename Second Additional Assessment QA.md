@@ -13,6 +13,26 @@ with any assumed scene conditions?
 * Sports entertainment (fly through games or sideline seating)
 * Practice tape
 
+We will consider three scenarios:
+1. An individual recording their motion while running on standard 400m track
+   with limited supporting personal to operate an ad hoc markerless motion
+   capture system
+2. Extension of this scenario to consider reconstructing leaders in a running
+   race
+3. Application to American Football and reconstruction of players that are close
+   together or far apart
+We will assume adequate lighting and no occlusion (unless otherwise
+specified), and we will ignore motion blur as that was discussed extensively
+with the last round of questions.
+For this analysis, we will assume interest in dense reconstruction (e.g.
+photorealistic) such as via Gaussian Splatting or as an extension of a method
+that computes skeletal reconstruction plus shape and application for
+entertainment purposes or for review as practice tape.
+
+We will also briefly adapt our analysis to other relevant settings such as
+reconstructing motion for downhill skiing or a theatrical or musical
+performance.
+
 # Expected impact of the proposed approach:
 
 Assuming such scenarios, we would like to understand the expected practical
