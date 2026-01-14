@@ -44,8 +44,6 @@ other measurable gains?
 
 ## Response
 
-* Need to work through math for e.g. cost reduction and number of cameras
-
 The key contribution of this proposal is to develop motion capture methods that
 function by coordinating sensing capacity to cover a smaller region of a larger
 volume, e.g. to reconstruct motion of moving athletes.
@@ -58,39 +56,51 @@ under the following conditions:
    moving through a much larger volume)
 2. If satisficing results can be obtained by significantly varying levels of
    detail and prioritizing observation of small portion of a larger scene
-   (e.g. prioritizing action near a ball or while players are otherwise spread
+   (e.g. prioritizing action near a ball while players are otherwise spread
    out over the volume)
-3. If occlusions are significant and if adapting to occlusions is critical
+3. If occlusions are significant so that coordinating cameras to mitigate
+   occlusions is critical
 
 Quantifying these impacts depends on nuanced aspects of the structure of the
-environment and the scene being observed and the requirements for downstream
-applications.
+environment, the number of subjects, and the structure of their motion as well
+as the requirements for downstream applications.
+As noted in this round of questions, markerless motion capture systems that
+perform skeletal reconstruction are maturing, and Sony is deploying this at
+stadium-scale via Hawk-Eye innovations.
+For this reason, we will focus on necessary requirements to obtain dense
+reconstructions of subjects, observation of the subject's entire surface via
+several, evenly spaced, camera views and, informally, that the subject should
+fill most or a large portion of the frame.
 
-Still, there is some merit to discussing extremes.
+The following are rough estimates intended to make comparisons in terms of
+orders of magnitude.
+
+There is merit to discussing extremes.
 Consider a single athlete (say a long distance runner) who wishes to record
 their a practice session, running on an oval track.
 A small number of PTZ cameras (e.g. 4-6) would be sufficient to provide dense
 coverage of the athlete from multiple perspectives and for the entire track.
 At this extreme, camera coordination and sufficient zoom would ensure that the
 athlete fills a significant portion of each camera's field-of-view, even as the
-athlete moves about a much larger volume.
+athlete moves about the large volume of the track.
 Obtaining similar performance with static cameras would require a similar number
 of cameras (4-6) for every 2-4m of a 400m track---whether those cameras are
 arranged on trusses near the runner or in large nests with telephoto lenses
 above and outside the track.
-In this case, the difference in number of cameras would be on the order of 100x
-and would have transformative impacts.
-A Static camera system would require semi-permanent installation, precise
-orientation and calibration of all cameras and altogether at immense cost.
+In this case, the reduction in number of cameras by deploying a PTZ system would
+be on the order of 100x and would have transformative impacts.
+A Static camera system would require extensive setup or semi-permanent
+installation, precise orientation and calibration of all cameras and altogether
+at immense cost.
 A system based on PTZ cameras could be transported in a single vehicle and
-installed in a few minutes by a small team.
+installed in a few minutes by a small team or possibly the athlete theirself.
 
-A small step away from this scenario would be to obtain motion capture data for
-a race, prioritizing a group of leaders.
+Taking a small step away from this scenario, consider obtaining motion capture
+data for a race on the same track, prioritizing a group of leaders.
 In this case, the advantage for a practical deployment might be closer to 10x.
 Allowing for slightly reduced resolution---some cameras may cover more than one
-person at a time---10-20 PTZ cameras might provide adequate coverage of the
-leading 5-10 athletes.
+person at a time, say averaging 3 people covered per camera view---10-20 PTZ
+cameras might provide adequate coverage of the leading 5-10 athletes.
 Comparable coverage with static cameras could be obtained with 4-6 cameras for
 every 10-15m of track, approximately 100-240 cameras.
 
