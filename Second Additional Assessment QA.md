@@ -138,11 +138,11 @@ subsequently impacted by occlusion).
 Obtaining improved reconstruction performance and mitigating occlusion
 due to dense configurations of players
 would be technically challenging but may be a key motivating factor
-for applying motion capture based on coordinated  cameras to this team sports
+for applying motion capture based on coordinated cameras to this team sports
 setting.
 
 If this project is funded, we will also be able to quantify these impacts more
-accurately such as by obtaining  simulation results based on existing tracking
+accurately such as by obtaining simulation results based on existing tracking
 data for team sports or via field deployments of prototype systems.
 
 # Research targets:
@@ -168,7 +168,7 @@ We agree that dense reconstruction and Gaussian Splatting provide the more
 compelling motivation.
 As hinted in the question, Hawk-Eye systems already provide skeletal
 reconstruction capabilities for sports; applications that rely on metric
-accuracy, such as automated refereeing,  may also be more suitable to static
+accuracy, such as automated refereeing, may also be more suitable to static
 camera arrays in general.
 For team sports and skeletal reconstruction, the impact of our methods may be
 marginal.
