@@ -7,12 +7,6 @@ with any assumed scene conditions?
 
 ## Response
 
-* look into research on markerless capture and applications to make more
-  concrete and to identify uses outside sports
-
-* Sports entertainment (fly through games or sideline seating)
-* Practice tape
-
 We will consider three scenarios:
 1. An individual recording their motion while running on standard 400m track
    with limited supporting personal to operate an ad hoc markerless motion
@@ -71,6 +65,9 @@ For this reason, we will focus on necessary requirements to obtain dense
 reconstructions of subjects, observation of the subject's entire surface via
 several, evenly spaced, camera views and, informally, that the subject should
 fill most or a large portion of the frame.
+We will generally assume that 4-6 such unique cameras views would be necessary
+to densely reconstruct a single person, but this will be a multiplicative factor
+that cancels out when making comparison.
 
 The following are rough estimates intended to make comparisons in terms of
 orders of magnitude.
@@ -84,9 +81,9 @@ At this extreme, camera coordination and sufficient zoom would ensure that the
 athlete fills a significant portion of each camera's field-of-view, even as the
 athlete moves about the large volume of the track.
 Obtaining similar performance with static cameras would require a similar number
-of cameras (4-6) for every 2-4m of a 400m track---whether those cameras are
-arranged on trusses near the runner or in large nests with telephoto lenses
-above and outside the track.
+of cameras for every 2-4m of a 400m track---whether those cameras are arranged
+on trusses near the runner or in large nests with telephoto lenses above and
+outside the track.
 In this case, the reduction in number of cameras by deploying a PTZ system would
 be on the order of 100x and would have transformative impacts.
 A Static camera system would require extensive setup or semi-permanent
@@ -101,8 +98,8 @@ In this case, the advantage for a practical deployment might be closer to 10x.
 Allowing for slightly reduced resolution---some cameras may cover more than one
 person at a time, say averaging 3 people covered per camera view---10-20 PTZ
 cameras might provide adequate coverage of the leading 5-10 athletes.
-Comparable coverage with static cameras could be obtained with 4-6 cameras for
-every 10-15m of track, approximately 100-240 cameras.
+Comparable coverage with static cameras could be obtained with the standard
+number of cameras for every 10-15m of track, approximately 100-240 cameras.
 
 Similar analysis would apply for recording races in more varied settings or
 other sports with similar requirements---one of the papers we cited in the
@@ -115,39 +112,38 @@ Impacts for team sports, though central to our initial proposal narrative, would
 be harder to quantify.
 Consider dense capture for American football.
 In the worst case, with teams spread broadly across the field, each athlete may
-be covered by several dedicated PTZ cameras (say 6).
+be covered by several dedicated PTZ cameras (gain, say 6).
 Conservatively, that same number of cameras might cover a 10m * 10m area of the
 field.
 For 22 athletes and a rectangular 110m * 49m field, we might expect a 2.5x
 reduction in the number of cameras (132 vs 323).
-If athletes move and can be covered in groups of 2-3 on average, the
-gain becomes 5-7.5x.
+If athletes move and can be covered in groups of 3 on average, the
+gain becomes 7.5x.
 
-* Adding prioritization brings this to about 10x
-* Adapting for occlusions in American football: consider athletes lined up at
-  start of play.
-  Observations from sideline are heavily occluded, and sides of players are
-  nearly parallel to views from end-zones.
-  Directing many cameras from varying perspectives narrowly along the line could
-  provide significantly improved coverage for parts of the scene that would
-  otherwise suffer due to severe occlusion.
-  Consider the same number of players as deployed to cover players spread out
-  all over a field.
-  For a static array, 30 cameras might be aimed at a 10m wide strip across the
-  width of the field; compare to 50 or 100 PTZ cameras with views distributed
-  evenly over players' surfaces with denser coverage over regions where players
-  are close together (and that are subsequently impacted by occlusion.
+However, consider that players may be arranged more densely: players line up
+closely together at the start of play.
+Observations from sideline are also heavily occluded, and sides of players are
+nearly parallel to views from end-zones.
+Directing many cameras from varying perspectives narrowly along the line (either
+by virtue of arrangement of cameras around the field or via explicit
+occlusion-aware planning) could provide significantly improved coverage for
+parts of the scene that would otherwise suffer due to severe occlusion.
+Consider the same configuration of cameras as deployed to cover players spread
+out all over a field.
+For a static array, 30 cameras might be aimed at a 10m wide strip across the
+width of the field; compare to 40 or 100+ PTZ cameras with views distributed
+evenly over players' surfaces with and capacity to direct denser coverage over
+the middle of the field where players are close together (and that are
+subsequently impacted by occlusion).
+Obtaining improved reconstruction performance and mitigating occlusion
+due to dense configurations of players
+would be technically challenging but may be a key motivating factor
+for applying motion capture based on coordinated  cameras to this team sports
+setting.
 
-American football
-* 4-6 cameras * 22 athletes
-* 110m * 49m / (10m)^2 * 6-10 cameras
-
-* Similar benefits could be obtained recording performances
-
-* Path to quantifying impacts (data collection and preliminary results)
-* Allowing for varying detail and resolution
-* Races and very large ad-hoc deployments
-* Extremes
+If this project is funded, we will also be able to quantify these impacts more
+accurately such as by obtaining  simulation results based on existing tracking
+data for team sports or via field deployments of prototype systems.
 
 # Research targets:
 
@@ -160,23 +156,22 @@ priority within this project.
 
 ## Response
 
-* Contrast to Hawk-Eye sports motion tracking
-
 Our initial proposal drew motivation from applications of both dense and
 skeletal reconstruction.
-Our initial focus on skeletal reconstruction would be for pragmatic reasons to
-demonstrate markerless capture with the coordinated camera system.
+However, our initial technical focus on skeletal reconstruction would be for
+pragmatic reasons toward prototyping markerless capture with a coordinated
+camera system.
 However, we are very interested in evaluating and demonstrating capabilities for
 dense reconstruction.
 
 We agree that dense reconstruction and Gaussian Splatting provide the more
 compelling motivation.
 As hinted in the question, Hawk-Eye systems already provide skeletal
-reconstruction capabilities for sports, and applications, such as automated
-refereeing, that rely on metric accuracy may be more suitable to static camera
-arrays.
-The impact of our methods for skeletal reconstruction would be marginal,
-reducing requirements on numbers of cameras for an otherwise viable system.
+reconstruction capabilities for sports; applications that rely on metric
+accuracy, such as automated refereeing,  may also be more suitable to static
+camera arrays in general.
+For team sports and skeletal reconstruction, the impact of our methods may be
+marginal.
 However, systems for dense reconstruction at the scale of a stadium do not yet
 exist, and we believe that coordinated camera systems such as what we propose
 would be enabling and transformative for reasons noted in the responses above.
@@ -223,14 +218,14 @@ to make developments available similarly.
 
 We are also developing a variety of (ROS2-based) tools for camera control and
 for tracking people and moving objects.
-We would expect to make these tools available.
-However, this part of our system is more specialized to our prototype systems
-and may be of reduced interest to Sony.
+We could expect to make these tools available.
+However, this part of our system would be more specialized to our prototype
+systems and may be of reduced interest to Sony.
 
 The sponsored work will also involve development of new tools for (dense
-and/or skeletal) markerless motion capture with PTZ cameras.
+and/or skeletal) markerless motion capture with coordinated cameras.
 We would expect this part of our system to be less specialized to our laboratory
-prototypes and to be of more interest to sony.
+prototypes and to be of more interest to Sony.
 We would expect to prioritize making this part of the system available to Sony
 and as open source software.
 
