@@ -39,4 +39,4 @@ sage-plots*.tex
 *.synctex.gz(busy)
 *eps-converted-to.pdf
 
-whitepaper-ptz-markerless-corah.pdf
+*.pdf
