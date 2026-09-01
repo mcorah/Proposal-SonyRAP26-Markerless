@@ -10,14 +10,16 @@
 
 Confirmation number:
 
-## Final submission (instructions from Krista Morrow)
+## Submission requirements
 
-"PI-submitted proposal through Sony’s webform"
+* 11 pages (including budget summary)
 
-"on submission day, I’ll need to see the official final documents along with a
-PDF or screenshots of the proposal in its final form in the webform"
+## Final submission 2026
 
-"The technical document should ideally be completed by 9 AM on submission day."
+* Provide proposal to Ethan by Sept 14
+* "PI-submitted proposal through Sony’s webform"
+* "on submission day, I’ll need to see the official final documents along with a
+    PDF or screenshots of the proposal in its final form in the webform"
 
 ## Keyword and award type
 
