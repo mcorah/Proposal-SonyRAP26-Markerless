@@ -430,23 +430,38 @@ We propose applying a similar approach to planning for pan-tilt-zoom cameras by
 reformulating the earlier planning problem according to the PTZ camera configuration
 space.
 
-\begin{figure*}
-\centering
-\setlength{\tabcolsep}{1pt}
-\setlength{\figureheight}{1.2in}
-      \resizebox{\linewidth}{!}{
+\begin{figure}
+  \centering
+  \begin{subfigure}{\linewidth}
+    \setlength{\tabcolsep}{1pt}
+    \setlength{\figureheight}{1.2in}
+    \resizebox{\linewidth}{!}{
       \input{figures/qualtiative}
-      }
-      \caption{%
-        Illustration of results for a view planning scenario taken
-        from~\citep{hughes2024cdc}.
-        Robots successfully track subjects despite pairs switching partners as
-        they cross.
-        \emph{Although this example features drones, the same methods are
-        applicable to coordination of other sorts of camera platforms.}
-      }%
-      \label{fig:multi-robot-videography}
-\end{figure*}
+    }
+    \caption{Drone coordination to observe crossing and swapping subjects}%
+    \label{subfig:drone_coordination}
+  \end{subfigure}
+  \begin{subfigure}{\linewidth}
+    \includegraphics[width=\linewidth]{ptz_coordination_scenario}
+    \caption{Pan-tilt-zoom camera coordination to observe differently prioritized
+    subjects}%
+    \label{subfig:ptz_coordination}
+  \end{subfigure}
+  \caption{%
+    Illustration of results for view planning scenarios taken
+    from~\citep{hughes2024cdc,bouy2026} with view based coordination via \emph{greedy
+    submodular maximization}.
+    (\subref{subfig:drone_coordination})
+    A \emph{team of drones} successfully track subjects despite pairs
+    switching partners as they cross.
+    (\subref{subfig:ptz_coordination})
+    \emph{Pan-tilt-zoom cameras} film differently prioritized runners.
+    %, a high-priority individual and a group at lower priority.
+    Coordination ensures multiple views of the group and high-priority
+    individual.
+  }%
+  \label{fig:multi-robot-videography}
+\end{figure}
 
 \subsection{Reconstruction}
 
