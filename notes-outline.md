@@ -95,6 +95,21 @@ What does it look like to focus more on dense reconstruction of moving subjects?
 * Design and feasibility w/ sim and real data: eval coverage distribution
 * Gaussian splatting: How do I integrate convincingly?
 
+* Should include kinematic reconstruction during first phase; this is a
+  branching off point that can lead to further development of these systems for
+  biomechanics research
+* End with experiments and evaluation for dense 3D capture for gaussian
+  splatting
+
+## Capital equipment
+
+Can turn the motion capture area into a facility for dense RGBD motion capture
+* Multiple multi-plane lidar
+* Bank of RGB cameras
+* Additional PTZ cameras
+
+I can feed this all into dense gaussian splatting experiments at the end
+
 # Old ideation
 
 Can I fit in 4D splatting?
