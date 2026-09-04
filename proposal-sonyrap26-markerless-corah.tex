@@ -551,27 +551,38 @@ methods for skeletal and dense reconstruction.
 
 \section{Goals and Milestones}
 
-\micah{Compress timeline}
-
+\noindent
 The timeline and milestones for the proposed work are as follows:
 
 % Timeline with milestones and deliverables
 \begin{itemize}[itemsep=0.3ex,topsep=0.3ex]
-  \item (Aug--Oct '27) Prototype multi-camera view planning in indoor
-    laboratory environment
+  \item (Aug--Oct '27) Develop and integrate domain-modeling-aware
+    (e.g. focus, exposure, motion-blur)
+    multi-camera view planning; evaluate in laboratory environment
   \item (Nov '27--Jan '28) Prototype 3D skeletal reconstruction based on
-    pan-tilt-zoom camera streams
-  \item (Feb '28) Perform comparative experiments for skeletal reconstruction in
-    lab setting
-  \item (Feb '28) \textbf{Milestone:} submit paper based on initial system and
-    experiments to IROS'28
-  \item (March--April '28) Develop and evaluate person-tracking system for large
-    environment based on flat ground assumption
-  \item (May '28) Integrate updated tracking system; develop systems and
-    procedures for large scale outdoor experiments
-  \item (June '28) Perform experiments on outdoor fields
-  \item (July--Aug '28) \textbf{Milestone:}
-    Write paper based on field experiments for submission to ICRA'28
+    pan-tilt-zoom camera streams;
+    \textbf{Equipment:} Design \emph{dense capture system} and source camera
+    equpment
+  \item (Feb--March '28)
+    Perform comparative experiments on application of domain-aware
+    PTZ camera coordination applied to skeletal reconstruction in lab setting
+    and outdoors
+  \item (March '28)
+   \textbf{Milestone:} Submit paper on application of camera
+    coordination to skeletal reconstruction to IROS'28
+  \item (March--May '28)
+    Develop methods for Gaussian splatting reconstruction via data sourced from
+    Pan-Tilt-Zoom system
+    \textbf{Equipment:} Install and integrate \emph{dense capture system}
+  \item (June--Aug '28)
+    Experimental evaluation of application of coordinated PTZ system for
+    dense and Gaussian splatting reconstruction
+    under varied assumptions; evaluate in laboratory environment with
+    \emph{dense capture system} and outdoors
+  \item (Aug '28) \textbf{Milestone:}
+    Prepare paper on camera coordination for Gaussian splatting
+    reconstruction for submission to ICRA'28;
+    \textbf{Dataset:} Release accompanying dense PTZ dataset.
 \end{itemize}
 
 % Expected outcomes and results (separate tangible and intangible outcomes)
