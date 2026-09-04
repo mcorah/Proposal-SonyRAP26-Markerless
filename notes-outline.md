@@ -87,6 +87,13 @@ Preliminary results... intersperse?
 * Expected output and innovation
 * Team and experience
 
+# Key updates to new version
+
+* Discuss development of methods for camera coordination for motion capture
+* Discuss development and need for dense motion capture system
+* Move Gaussian splatting from future to planned work
+* Mention support from NVIDIA; will leverage those GPUs
+
 # Ideation
 
 What does it look like to focus more on dense reconstruction of moving subjects?
