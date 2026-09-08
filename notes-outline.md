@@ -93,6 +93,7 @@ Preliminary results... intersperse?
 * Discuss development and need for dense motion capture system
 * Move Gaussian splatting from future to planned work
 * Mention support from NVIDIA; will leverage those GPUs
+* Integrate Bouy thesis
 
 # Ideation
 
