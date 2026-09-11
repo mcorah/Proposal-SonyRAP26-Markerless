@@ -232,6 +232,31 @@ The proposed work will address two sets of challenges, those related to
 \emph{systems and integration} and to
 \emph{camera coordination}.
 
+\paragraph{Camera coordination challenges}
+
+\begin{enumerate}[resume,itemsep=0.3ex,topsep=0.3ex]
+  \item Distributing camera views over subjects and obtaining observations from
+    multiple perspectives
+  \item Maintaining coverage of multiple subjects and groups that spread out and
+    rearrange
+  \item Achieving adequate coverage and detail for the desired reconstruction
+    task (kinematic pose, dense reconstruction)
+\end{enumerate}
+The requirements for capturing motions of multiple subjects such as athletes
+suggest developing methods suitable to coordinate cameras to observe all
+subjects at once and from multiple perspectives.
+Further, while we propose evaluation by reconstructing kinematic pose, we seek
+to develop systems suitable for future application for dense
+reconstruction.
+Therefore, the capacity to optimize camera zoom to increase resolution
+over the surface of relevant portions of the subjects and scene becomes
+paramount for potential downstream applications, e.g. synthesizing a novel and
+photorealistic video feed as an entertainment technology.
+%
+These challenges, in particular, are also \emph{fundamental to motion capture
+and related filming tasks} and are not specific to given applications or the
+proposed systems approach.
+
 \paragraph{Systems and integration challenges}
 
 \begin{enumerate}[itemsep=0.3ex,topsep=0.3ex]
@@ -264,31 +289,6 @@ systems~\citep{bachmann20193dv,xu2022bmvc}.
 %We will begin to address these challenges by prototyping our proposed approach
 %and collecting datasets suitable for evaluating and eventually improving
 %precision.
-
-\paragraph{Camera coordination challenges}
-
-\begin{enumerate}[resume,itemsep=0.3ex,topsep=0.3ex]
-  \item Distributing camera views over subjects and obtaining observations from
-    multiple perspectives
-  \item Maintaining coverage of multiple subjects and groups that spread out and
-    rearrange
-  \item Achieving adequate coverage and detail for the desired reconstruction
-    task (kinematic pose, dense reconstruction)
-\end{enumerate}
-The requirements for capturing motions of multiple subjects such as athletes
-suggest developing methods suitable to coordinate cameras to observe all
-subjects at once and from multiple perspectives.
-Further, while we propose evaluation by reconstructing kinematic pose, we seek
-to develop systems suitable for future application for dense
-reconstruction.
-Therefore, the capacity to optimize camera zoom to increase resolution
-over the surface of relevant portions of the subjects and scene becomes
-paramount for potential downstream applications, e.g. synthesizing a novel and
-photorealistic video feed as an entertainment technology.
-%
-These challenges, in particular, are also \emph{fundamental to motion capture
-and related filming tasks} and are not specific to given applications or the
-proposed systems approach.
 
 \section{Gap in state-of-art and contribution}
 
