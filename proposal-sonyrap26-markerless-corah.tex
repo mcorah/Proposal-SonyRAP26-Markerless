@@ -437,21 +437,26 @@ camera system.
 
 \subsection{Multi-camera coordination}
 
-Autonomous camera view planning is a key element of our approach.
-Our prior works on this topic present methods to optimize and maximize pixel
+Our prior works on autonomous camera view planning optimize and maximize pixel
 densities over subjects' surfaces for multiple cameras
-jointly~\citep{suresh2024iros,hughes2024cdc,bouy2026}.
+jointly and consider application both with aerial
+robots~\citep{suresh2024iros,hughes2024cdc} and pan-tilt-zoom
+cameras~\cite{bouy2026}.
 This approach applies submodular optimization methods to maximize view quality
 directly without relying on fixed assignments and guaranteeing constant-factor
 suboptimality for approximate solutions to the joint multi-camera optimization
 problem.
-Simulation results involving a team of UAVs filming multiple moving subjects
+Simulation results involving filming multiple moving subjects have
 demonstrated emergent assignment and formation behaviors and superior
 performance compared to formation methods when subjects split and rejoin
 (Fig.~\ref{fig:multi-robot-videography}).
-We propose applying a similar approach to planning for pan-tilt-zoom cameras by
-reformulating the earlier planning problem according to the PTZ camera configuration
-space.
+These methods are also suitable for nuanced camera models and modeling
+occlusion~\citep{suresh2024iros}.
+Our latest work involving PTZ cameras~\citep{bouy2026} relies on a pinhole
+camera model with varying focal length; for application to motion capture, we
+plan to incorporate more comprehensive camera modeling (considering factors such
+as focus, exposure, and motion blur) and specific considerations for
+reconstruction (such as requirements for overlapping observations).
 
 \begin{figure}
   \centering
