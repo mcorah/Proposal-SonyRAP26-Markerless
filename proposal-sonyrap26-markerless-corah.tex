@@ -532,43 +532,58 @@ reconstruction from monocular PTZ data; we will adopt a co-design approach by
 considering requirements for reliable reconstruction in the placement and
 coordination of robotic cameras.
 
-\subsection{Systems and experimental validation}
+\subsection{Systems and experimental approach}
 
-\micah{Add details for capital equipment here}
-\micah{Could mention varying number of cameras}
+\begin{development}
+\begin{itemize}
+  \item Could mention varying number of cameras
+  \item Design of camera systems based on tracking data?
+  \item Inlude detail for capital equipment
+\end{itemize}
+\end{development}
 
-We have begun developing a multi-camera system consisting of four Axis
+\paragraph{Simulation environment and evaluation}
+
+We have developed a simulation of sports scenarios for PTZ camera coordination
+based on ROS Gazebo and sources of professional sports tracking data obtained
+from the Deutsche Fu\ss ball Liga (DFL) \cite{bassek2025integrated}.
+This environment and dataset will enables simulation of large-scale scenarios
+and experiments evaluating camera placement and number.
+
+
+\paragraph{Camera and tracking systems}
+
+We have developed a multi-camera system consisting of four Axis
 pan-tilt-zoom cameras for the purpose of filming and cinematography tasks
 (Fig.~\ref{subfig:videography}).
 A Realsense RGBD camera mounted at high angle enables detection and tracking
-in the laboratory setting---for tracking in outdoor environments we have
+in the laboratory setting---for outdoor environments we have
 developed a tracking system that relies on a flat ground assumption and RGB
 data.
 The pictured scene illustrates a system demo: three cameras track and film a
 plush toy representing the Mines mascot ``Blaster the Burro."
 
-After developing the prototype motion capture system, we will validate the
-proposed approach via a combination of laboratory and field experiments.
+\paragraph{Laboratory and field experiments}
+
+We will evaluate methods for kinematic reconstruction via a combination of
+laboratory and field experiments.
 We will conduct laboratory experiments in an indoor motion capture space
-($2\mathrm{m} \times 2\mathrm{m} \times 3.5\mathrm{m}$ interior volume)
-equipped with a marker-based Optitrack motion capture system
-(Fig.~\ref{subfig:motion_capture}).
-However, experiments comparing to marker-based capture will require use of
-motion capture suits and reflective marker beads.
-Therefore, we also plan to conduct experiments with a small number of
-conventional RGB cameras and will leverage open source software for skeletal
-motion capture.\footnote{%
-  FreeMoCap: \url{https://freemocap.org/}
-}
+(Fig.~\ref{subfig:motion_capture},
+$2\mathrm{m} \times 2\mathrm{m} \times 3.5\mathrm{m}$ interior volume).
+%equipped with a marker-based Optitrack motion capture system
+%However, experiments comparing to marker-based capture will require use of
+%motion capture suits and reflective marker beads.
+We will compare to results obtained via
+static RGB cameras and/or conventional marker based capture.
 
 Outdoor experiments conducted on the Mines campus will focus on testing system
 functionality in challenging scenarios featuring large capture volumes, multiple
 subjects, and complex motions.
 We will validate and evaluate precision by setting up a system of static cameras
 to capture motions in smaller portions of the capture volume, and we will
-register the coordinate frames of the two motion capture systems by precisely
-locating cameras with surveying equipment (e.g. by using a total station).
-We will also leverage these experiments to develop and release datasets suitable
+register the coordinate frames locating cameras with surveying equipment.
+%(e.g. by using a total station).
+We will leverage these experiments to develop and release datasets suitable
 for continued development and improvement of reconstruction and motion capture
 methods for skeletal and dense reconstruction.
 
@@ -611,8 +626,8 @@ methods for skeletal and dense reconstruction.
 \paragraph{Dense capture system (capital equpment)}
 
 The budget includes funds to support development of a laboratory system for
-validation and evaluation of dense motion capture, the \emph{dense capture
-system}.
+validation and evaluation of dense motion capture methods, the \emph{dense
+capture system}.
 This system will consist of cameras and sensors to be installed in our motion
 capture space (Fig.~\ref{subfig:motion_capture}.
 This may include RGB cameras, multi-plane lidar, and additional PTZ camera
