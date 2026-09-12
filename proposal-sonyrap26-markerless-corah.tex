@@ -508,6 +508,27 @@ and of subjects (motion blur, limits of prediction accuracy).}
 
 \paragraph{Dense reconstruction}
 
+\begin{development}
+  \begin{itemize}
+    \item Greater senstivity to resolution and modeling of surface coverage
+    \item Confront and model challenges such as necessity for overlapping views
+      and challenges for finding corespondences, sparsity of views
+    \item Multi-perspective, specular, and reflection
+  \end{itemize}
+\end{development}
+
+Production of dense reconstructions from PTZ data will heighten
+challenges related to appearance, calibration uncertainty, correspondences,
+multi-perspective appearance (specular, reflection), and visual coverage.
+This part of the proposed work will focus on the challenge of
+obtaining dense reconstructions from sparse views and for modeling requirements
+to obtain reliable reconstruction of complex scenes from coordinated cameras.
+We will apply state-of-art methods for dense reconstruction via Gaussian
+splatting~\citep{fei20243d,wu20253dgut,kerbl20233d} and will adapt to obtain
+reconstruction from monocular PTZ data; we will adopt a co-design approach by
+considering requirements for reliable reconstruction in the placement and
+coordination of robotic cameras.
+
 \subsection{Systems and experimental validation}
 
 \micah{Add details for capital equipment here}
