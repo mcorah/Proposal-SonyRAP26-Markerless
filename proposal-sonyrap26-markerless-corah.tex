@@ -117,7 +117,7 @@ coordination of mulitiple cameras for visual coverage of groups of moving
 subjects with methods for reconstruction and markerless motion capture.
 The proposed system, illustrated in Fig.~\ref{fig:markerless_system}, will
 enable inexpensive markerless motion capture in large spaces
-by coordinating multiple pan-tilt-zoom cameras to film and reconstruct
+by coordinating multiple pan-tilt-zoom (PTZ) cameras to film and reconstruct
 groups of moving subjects.
 
 \begin{figure}
@@ -172,7 +172,7 @@ circular formation around one subject, capturing multiple subjects, especially
 if those subjects may sometimes move apart, poses a significant challenge
 regarding view planning and coordination.
 
-Alternatively, systems based on static pan-tilt-zoom
+Alternatively, systems based on static PTZ
 cameras~\citep{bachmann20193dv,yamamoto2022visigrapp}
 could strike a balance and provide benefits of camera coordination
 (e.g. operation in large and outdoor spaces) without limitations of aerial
@@ -379,7 +379,7 @@ fields-of-view of a small number of fixed cameras to observe and reconstruct
 motions of subjects as they move about a contained
 volume~\citep{bachmann20193dv,yamamoto2022visigrapp}.
 \citet{bachmann20193dv} developed a
-markerless motion capture system with pan-tilt-zoom (PTZ) cameras at fixed
+markerless motion capture system with PTZ cameras at fixed
 locations but with uncertain orientations, and they present application and
 results for tracking skeletal pose of a downhill skier.
 Otherwise, there has been little interest in developing
@@ -398,7 +398,7 @@ athletes that may come together, spread apart, and reorganize.
 
 Camera coordination for multi-perspective visual coverage has not yet been
 studied extensively.
-Both aerial and pan-tilt-zoom motion capture methods adopt
+Both aerial and PTZ motion capture methods adopt
 representations that center a single
 subject~\citep{ho2021iros,saini2022ral,saini2019iccv,hong2024eccv,zhou2018icra,bachmann20193dv,yamamoto2022visigrapp}.
 On the other hand, methods for multi-robot active perception or information
@@ -426,7 +426,7 @@ in large-scale environments; and
 \section{Methods}
 
 We propose developing a prototype markerless motion capture system based on a small number
-of pan-tilt-zoom cameras (e.g. 4--8) that will autonomously track and observe
+of PTZ cameras (e.g. 4--8) that will autonomously track and observe
 multiple subjects moving together and separately either indoor in a laboratory
 environment or in a large outdoor space such as a football field or running
 track.
@@ -443,7 +443,7 @@ camera system.
 Our prior works on autonomous camera view planning optimize and maximize pixel
 densities over subjects' surfaces for multiple cameras
 jointly and consider application both with aerial
-robots~\citep{suresh2024iros,hughes2024cdc} and pan-tilt-zoom
+robots~\citep{suresh2024iros,hughes2024cdc} and PTZ
 cameras~\cite{bouy2026}.
 This approach applies submodular optimization methods to maximize view quality
 directly without relying on fixed assignments and guaranteeing constant-factor
@@ -582,7 +582,7 @@ camera placement and number for large-scale scenarios
 \paragraph{Camera and tracking systems}
 
 We have developed a multi-camera system consisting of four Axis
-pan-tilt-zoom cameras for the purpose of visual coverage and cinematography
+PTZ cameras for the purpose of visual coverage and cinematography
 tasks (Fig.~\ref{subfig:videography}).
 A Realsense RGBD camera mounted at high angle enables detection and tracking
 in the laboratory setting---for outdoor environments we have
@@ -678,7 +678,7 @@ The timeline and milestones for the proposed work are as follows:
     (e.g. focus, exposure, motion-blur)
     multi-camera view planning; evaluate in laboratory environment
   \item (Nov '27--Jan '28) Prototype 3D skeletal reconstruction based on
-    pan-tilt-zoom camera streams;
+    PTZ camera streams;
     \textbf{Equipment:} Design \emph{dense capture system} and source camera
     equpment
   \item (Feb--March '28)
@@ -716,12 +716,12 @@ The specific outcomes of proposed work will include:
   \item Open source release of \textbf{software for camera coordination} for
     markerless motion capture
   \item Open source release of tools for scene reconstruction (markerless
-    capture) with pan-tilt-zoom data
+    capture) with PTZ data
     for kinematic reconstruction
     \textbf{(Relevance: biomechanics)} and dense Gaussian
     splatting reconstruction
     \textbf{(Relevance: media and entertainment technologies)}
-  \item Dataset release for dense reconstruction with baseline and pan-tilt-zoom
+  \item Dataset release for dense reconstruction with baseline and PTZ
     camera data
 \end{itemize}
 \emph{Proposed work will have transformative impacts spanning from
