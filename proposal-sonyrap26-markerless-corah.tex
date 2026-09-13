@@ -189,7 +189,7 @@ development of methods for markerless motion capture.}
 %Our methods directly optimize camera views to observe multiple moving subjects from
 %multiple perspectives
 
-\subsection{Impacts}
+\subsection{Impact and future direction}
 
 We expect our work to lead to development and proliferation of
 low-cost, low-infrastructure markerless motion capture with widespread
@@ -538,6 +538,28 @@ reconstruction from monocular PTZ data; we will adopt a co-design approach by
 considering requirements for reliable reconstruction in the placement and
 coordination of robotic cameras.
 
+\begin{development}
+We expect our activities would focus on developing systems for dense
+reconstruction and addressing subsequent challenges for planning and autonomy.
+From a systems standpoint, achieving dense reconstruction with PTZ cameras
+may leverage models for metric depth estimation~\citep{ke2024cvpr}
+but will likely still involve challenging registration and optimization
+problems.
+However, developing such capabilities would enable integration with
+state-of-art methods for novel view synthesis with dynamic scenes such as based
+on Gaussian splatting~\citep{zheng2025cvpr}.
+Moreover, we expect dense, dynamic reconstruction to exacerbate challenges
+related to \emph{resolution} and \emph{coverage}.
+At the same time, a strength of our approach is that because we model and
+optimize pixel densities over the surface of the scene directly, our methods are
+therefore suitable to incorporating these twin challenges into our design and
+modeling.
+In this sense, coverage and resolution are requirements---we can adapt our
+planning approach accordingly (utility design and problem formulation) and
+design camera systems (numbers, placements, and models of cameras) to meet
+requirements for dense reconstruction.
+\end{development}
+
 \subsection{Systems and experimental approach}
 
 \begin{development}
@@ -718,6 +740,7 @@ This in turn will enable collection of novel data, will expand the scope of
 scientific study and enable development of media technologies based on dense
 capture reconstruction of sporting events.
 
+\begin{comment}
 \subsection{Future work and proposed extensions}
 
 \micah{Move Gaussian splatting out of future work.
@@ -735,27 +758,8 @@ dynamic reconstruction more accessible.
 However, current methods are largely limited to laboratory environments and
 may require additional instrumentation to compute accurate depth
 measurements~\citep{zheng2025cvpr}.
+\end{comment}
 
-\micah{More plausible use of depth and reconstruction}
-We expect our activities would focus on developing systems for dense
-reconstruction and addressing subsequent challenges for planning and autonomy.
-From a systems standpoint, achieving dense reconstruction with PTZ cameras
-may leverage models for metric depth estimation~\citep{ke2024cvpr}
-but will likely still involve challenging registration and optimization
-problems.
-However, developing such capabilities would enable integration with
-state-of-art methods for novel view synthesis with dynamic scenes such as based
-on Gaussian splatting~\citep{zheng2025cvpr}.
-Moreover, we expect dense, dynamic reconstruction to exacerbate challenges
-related to \emph{resolution} and \emph{coverage}.
-At the same time, a strength of our approach is that because we model and
-optimize pixel densities over the surface of the scene directly, our methods are
-therefore suitable to incorporating these twin challenges into our design and
-modeling.
-In this sense, coverage and resolution are requirements---we can adapt our
-planning approach accordingly (utility design and problem formulation) and
-design camera systems (numbers, placements, and models of cameras) to meet
-requirements for dense reconstruction.
 
 % Describe team composition
 \section{Team and experience}
