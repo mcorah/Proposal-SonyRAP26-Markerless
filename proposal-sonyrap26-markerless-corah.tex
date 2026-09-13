@@ -137,9 +137,8 @@ groups of moving subjects.
 \subsection{Background}
 
 Over the past six years, markerless motion capture has transitioned from
-research topic to product, and software and hardware offerings have emerged,
-often from leading manufacturers of marker-based systems, e.g. Vicon, Optitrack,
-or Qualisys.
+research topic to product, and products have emerged from leading manufacturers
+of marker-based systems, e.g. Vicon, Optitrack, and Qualisys.
 % Could add more detail here on biomechanics data collection
 These systems promise applications from walk-in virtual reality
 worlds\footnote{%
@@ -157,14 +156,15 @@ systems that can be readily deployed to cover large open spaces such as sports
 facilities and arenas.}
 
 \micah{Some of this should maybe be gap text}
+\micah{Also, some of this is repetitive and addressed in challenges or gap}
 The research community meanwhile has sought to cast away the anchor of
 fixed infrastructure by developing markerless motion capture capabilities around
 formations of UAVs~\citep{saini2019iccv,ho2021iros,hong2024eccv,saini2022ral}.
 While these aerial systems would not promise accuracy comparable to systems
-built around fixed cameras with calibrated extrinsics, they instead promise the
-ability to reconstruct human motion outdoors and largely without bounds.
-However, these systems have another, less obvious, limitation: research on
-aerial markerless motion capture has largely focused only on reconstructing
+built around fixed cameras, they promise the ability to reconstruct human motion
+outdoors and largely without bounds.
+However, these systems have other limitations: research on
+aerial markerless motion capture has focused on reconstructing
 motions of individual people and neglects to address reconstruction of motions
 of groups.
 Further, because these approaches generally rely on robots that fly in a
@@ -177,15 +177,13 @@ cameras~\citep{bachmann20193dv,yamamoto2022visigrapp}
 could strike a balance and provide benefits of camera coordination
 (e.g. operation in large and outdoor spaces) without limitations of aerial
 systems.
-Yet, there has been limited interest in developing such
-systems, and these prior works exhibit some of the same limitations as aerial
-systems such as limitation in scope to capturing motion of only a single
-subject.
-\emph{Therefore, a key focus of our work will be to introduce methods for camera
-coordination for filming multiple moving subjects that we have recently
-proposed~\citep{hughes2024cdc,suresh2024iros,bouy2026}
-(Fig.~\ref{fig:multi-robot-videography}) and apply these methods to the
-development of methods for markerless motion capture.}
+Yet, there has been limited interest in developing such systems, and scope is
+similarly limited capture of individual subjects.
+\emph{Therefore, our work will apply methods for camera coordination for visual
+  coverage of multiple moving subjects that we have
+  proposed~\citep{hughes2024cdc,suresh2024iros,bouy2026}
+(Fig.~\ref{fig:multi-robot-videography}) and will integrate with development of
+methods for markerless motion capture.}
 %Our methods directly optimize camera views to observe multiple moving subjects from
 %multiple perspectives
 
